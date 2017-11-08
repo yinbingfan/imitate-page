@@ -1,0 +1,279 @@
+.banner{
+	width:100%;
+	height:268px;
+	margin:0 auto;
+	background:url(../img/renc.png) center;
+}
+/*secent*/
+.secent{
+	width:100%;
+	height:47px;
+	border-bottom:1px solid #e0e0e0;
+}
+.secent_0{
+	width:1000px;
+	height:47px;
+	margin:0 auto;
+	background:url(../img/tubiao.png) no-repeat  left center;
+}
+.secent_0 p{
+	color:#666666;
+	font-size:13px;
+	line-height: 47px;
+	text-indent: 26px;
+}
+.secent_1{
+	float:left;
+}
+.secent_one{
+	float:left;
+}
+.secent_two{
+	float:left;
+}
+/*send*/
+.send{
+	width:1003px;
+	height:897px;
+	margin:0 auto;
+}
+.sendone{
+	width:223px;
+	height:897px;
+	margin:0 auto;
+	background:#e5e5e5;
+	float:left;
+}
+.sendone a{
+	display:block;
+	color:#363636;
+	text-decoration:none;
+}
+.sendone_1{
+	width:223px; 
+	height:79px;
+	font-size:25px;
+	font-weight:600;
+	text-align:center;
+	line-height:79px;
+	border-bottom:1px solid #d4d4d4; 
+}
+.sendone_1:hover{
+	background:#f15a23;
+	color:#f9e5ff;
+}
+.sendone_2{
+	width:223px; 
+	height:57px;
+	font-size:16px;
+	text-align:center;
+	line-height:57px; 
+	border-bottom:1px solid #d4d4d4; 
+}
+.sendone_2:hover{
+	background:#f15a23;
+	color:#f9e5ff;
+}
+
+.sendone_3{
+	width:223px; 
+	height:57px;
+	font-size:16px;
+	text-align:center;
+	line-height:57px; 
+	border-bottom:1px solid #d4d4d4; 
+}
+.sendone_3:hover{
+	background:#f15a23;
+	color:#f9e5ff;
+}
+.send_1{
+	width:780px;
+	height:45px;
+	margin:0 auto;
+	float:left;
+	border-bottom:1px dashed #c9caca;
+}
+a.sendone_4{
+	text-decoration:none;
+	color:black;
+	line-height:45px;
+	font-size:16px;
+}
+.sendone_4{
+	width:109px;
+	height:43px;
+	border-bottom:2px solid #f15a23;
+	margin-left:40px;
+}
+.send_2{
+	width:780px;
+	height:140px;
+	margin:0 auto;
+	float:left;
+	background:url(../img/kjt.png) no-repeat top center;
+}
+.send_3{
+	width:551px;
+	height:52px;
+	float:left;
+	margin:0 auto;
+	margin-left:113px;
+}
+.sen_1{
+	width:123px;
+	height:52px;
+	float:left;
+	margin:0 auto;
+	border-left:1px solid #c7c7c7;
+	border-right:1px solid #c7c7c7;
+	border-top:1px solid #c7c7c7;
+	line-height:52px;
+	text-align:center;
+	background:url(../img/jainbian.png) repeat-x;
+	margin-right:10px;
+}
+.sen_2{
+	width:123px;
+	height:52px;
+	float:left;
+	margin:0 auto;
+	border-left:1px solid #c7c7c7;
+	border-right:1px solid #c7c7c7;
+	border-top:1px solid #c7c7c7;
+	line-height:52px;
+	text-align:center;
+	background:url(../img/jainbian.png) repeat-x;
+	margin:0 5px;
+}
+.sen_3{
+	width:123px;
+	height:52px;
+	float:left;
+	margin:0 auto;
+	border-left:1px solid #c7c7c7;
+	border-right:1px solid #c7c7c7;
+	border-top:1px solid #c7c7c7;
+	line-height:52px;
+	text-align:center;
+	background:url(../img/jainbian.png) repeat-x;
+	margin:0 15px;
+}
+.sen_4{
+	width:123px;
+	height:52px;
+	float:left;
+	margin:0 auto;
+	border-left:1px solid #c7c7c7;
+	border-right:1px solid #c7c7c7;
+	border-top:1px solid #c7c7c7;
+	line-height:52px;
+	text-align:center;
+	background:url(../img/jainbian.png) repeat-x;
+}
+
+.send_4{
+	width:738px;
+	height:384px;
+	margin:0 auto;
+	float:left;
+	border:2px solid #f0f0f0;
+	margin-left:38px;
+	margin-top:40px;
+}
+.qd{
+	width:320px;
+	height:384px;
+	margin:0 auto;
+	float:left;
+}
+.qd_1{
+	width:320px;
+	height:77px;
+	margin:0 auto;
+	float:left;
+	background:url(../img/yaoshi.png) no-repeat ;
+}
+.qd_2{
+	width:320px;
+	height:133px;
+	margin:0 auto;
+	float:left;
+	line-height:40px;
+	text-align:center;
+	color:#666666;
+	font-size:16px;
+}
+.qd_2 span{
+	margin-left:16px;
+}
+.qd_3{
+	width:320px;
+	height:173px;
+	margin:0 auto;
+	float:left;
+}
+.qd_4{
+	width:320px;
+	height:80px;
+	margin:0 auto;
+	float:left;
+	background:url(../img/dianh.png) no-repeat top center;
+}
+.qd_5{
+	width:320px;
+	height:40px;
+	margin:0 auto;
+	float:left;
+	line-height:40px;
+	text-align: center;
+}
+.qd_5 span{
+	color:red;
+}
+
+.qq{
+	width:418px;
+	height:384px;
+	margin:0 auto;
+	float:left;
+}
+form{
+	margin-top:40px;
+}
+.qq_1 .txt,.txt_1,.txt_2,.txt_3,.txt_4{
+	width:258px;
+	height:34px;
+}
+.te_1,.te_2,.te_3,.te_4,.te_5{
+	width:80px;
+	display:inline-block;
+	text-align:center;
+	font-size:12px;
+	color:#999999;
+}
+.te_6{
+	width:258px;
+	height:34px;
+	background:#ff7b29;
+	text-align: center;
+	color:#ffffff;
+	font-size:18px;
+	line-height:34px;
+	margin-left:80px;
+}
+/*sont*/
+.sont{
+	width:748px;
+	height: 137px;
+	margin:0 auto;
+	float:left;
+	margin-top:65px;
+	margin-left:10px;
+}
+.sont_1{
+	width:173px;
+	height:64px;
+	margin:5px;
+	
+}

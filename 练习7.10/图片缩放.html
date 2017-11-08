@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>图片缩放</title>
+<style type="text/css">
+	.box{
+		width:500px;
+		height:500px;
+		border:3px solid green;
+		margin:50px auto;
+		position:relative;
+	}
+	.piction{
+		position:absolute;
+		top:0;
+		left:0;	
+	}
+	.piction img{
+		width:500px;
+		height:500px;
+	}
+	.box_1{
+		width:500px;
+		height:500px;
+		position:absolute;
+		top:0;
+		left:0;
+		opacity:0;
+	}
+	.one{
+		font-size:32px;
+		color:red;
+		text-align:center;
+		line-height:32px;
+	}
+	.two{
+		font-size:32px;
+		color:red;
+		text-align:center;
+		line-height:650px;
+	}
+	.box:hover .piction img{
+		transform:scale(0.6);
+	}
+	.box:hover .box_1{
+		opacity:1;
+		
+	}
+	
+
+
+</style>
+</head>
+<body>
+	<div class="box">
+		<div class="piction"><img src="img/bg3.jpg"></div>
+		<div class="box_1">
+			<p class="one">这是一个深秋的竹林，意境深远</p>
+			<p class="two">美丽的姑娘缓缓而来仿佛一缕茶香</p>
+		</div>
+	</div>
+	
+</body>
+</html>

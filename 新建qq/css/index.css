@@ -1,0 +1,138 @@
+html,body,div,p,ol,ul,li,dl,dt,dd,form,table,tr,td,h1,h2,h3,h4,h5,h6,hr,img,input{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	font-size: 26.67vw;
+}
+body{
+	font-family: "微软雅黑",Arial;
+	/*background:red;*/
+}
+ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border:none;
+	display: block;
+}
+/*iphone 6  2*/
+/*header*/
+header{
+	background:#12b7f5;
+	height:48px;
+	display:flex;
+	line-height:48px;
+	justify-content:space-between;
+	margin-bottom:9px;
+}
+header a{
+	font-size:20px;
+	color:#ffffff;
+}
+header a img{
+	width:58px;
+	height:45px;
+	
+}
+.head_one{
+	margin-right:10px; 
+}
+/*search*/
+.search{
+	margin:0 9px;
+	display:flex;
+	justify-content:center;
+	border-radius: 6px;
+	background:#eeeff3;
+}
+.search a{
+	display:flex;
+	flex-flow:row wrap;
+	line-height:26px;
+	font-size:18px;
+	color:#ffffff;
+	text-align: center;
+}
+.search a img{
+	width:15px;
+	height:17px;
+	align-self:center;
+}
+/*section */
+section{
+	display:flex;
+	margin-top:17px;
+}
+.section_one{
+	display:flex;
+	flex-flow:column;
+}
+.section_one a{
+	display:flex;
+	margin-top:15px;
+}
+.section_one a img{
+	width:51px;
+	height:53px;
+	line-height:67px;
+	align-self:center;
+	text-align:center;
+	margin:10px;
+}
+.section_two{
+	display:flex;
+	flex-flow:row wrap;
+}
+.section_two a {
+    font-size:18px;
+	color:#252525;
+	line-height:45px;
+	margin-left:10px;
+	border-bottom:1px solid #dedfe0;
+}
+.send_1{
+	font-size:20px; 
+	color:#000000;
+	font-weight:800; 
+}
+.send_2{
+	font-size:12px; 
+	color:#aaaaaa;
+}
+.send_3{
+	font-size:14px; 
+	color:#8e8e8e;
+}
+.seto{
+	display:flex;
+	justify-content:space-between;
+}
+
+/*footer*/
+.foot{
+	display:flex;
+	flex:1;
+	flex-flow:row wrap;
+	justify-content:space-around;
+}
+.foot a {
+	display:block;
+	font-size:10px;
+	color:#252525;
+	line-height:45px;
+	text-align: center;
+}
+.foot a img{
+	width:31px;
+	height:26px;
+	align-self:center;
+}
+.foot_3 img{
+	width:41px;
+	height:31px;
+}

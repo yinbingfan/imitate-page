@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>盒子</title>
+<style type="text/css">
+	.box{
+		width:800px;
+		height:200px;
+		margin:0px auto;
+		position:relative;
+		overflow:hidden;
+	}
+	.box_1{
+		width:800px;
+		border-top:10px solid blue;
+		margin:0 auto;
+		position:absolute;
+		top:0;
+		left:0;
+	}
+	.box_2{
+		width:800px;
+		border-top:10px solid yellow;
+		margin:0 auto;
+		position:absolute;
+		top:10px; 
+		right:0;
+		transition:all 5s;
+		transform:translateX(-800px);
+		opacity:0;
+	}
+	.box:hover .box_2{
+		transform:translateX(0px);
+		opacity:1;
+	}
+	.box:hover .box_1{
+		opacity:0;
+	}
+
+	.box_3{
+		width:800px;
+		border-bottom:10px solid blue;
+		margin:0 auto;
+		position:absolute;
+		top:190px;
+		left:0;
+	}
+	.box_4{
+		width:800px;
+		border-bottom:10px solid yellow;
+		margin:0 auto;
+		position:absolute;
+		top:180px; 
+		right:0;
+		transition:all 5s;
+		transform:translateX(800px);
+		opacity:0;
+	}
+	.box:hover .box_4{
+		transform:translateX(0px);
+		opacity:1;
+	}
+	.box:hover .box_3{
+		opacity:0;
+	}
+
+	.box_5{
+		height:200px;
+		border-left:10px solid blue;
+		margin:0 auto;
+		position:absolute;
+		top:0;
+		left:0;
+	}
+	.box_6{
+		height:180px;
+		border-left:10px solid yellow;
+		margin:0 auto;
+		position:absolute;
+		top:10px; 
+		left:0;
+		transition:all 5s;
+		transform:translateY(200px);
+		opacity:0;
+	}
+	.box:hover .box_6{
+		transform:translateY(0px);
+		opacity:1;
+	}
+	.box:hover .box_5{
+		opacity:0;
+	}
+
+	.box_7{
+		height:200px;
+		border-left:10px solid blue;
+		margin:0 auto;
+		position:absolute;
+		top:0;
+		right:0;
+	}
+	.box_8{
+		height:180px;
+		border-left:10px solid yellow;
+		margin:0 auto;
+		position:absolute;
+		top:10px; 
+		right:0;
+		transition:all 5s;
+		transform:translateY(-200px);
+		opacity:0;
+	}
+	.box:hover .box_8{
+		transform:translateY(0px);
+		opacity:1;
+	}
+	.box:hover .box_7{
+		opacity:0;
+	}
+	.wen{
+		width:800px;
+		height:200px;
+		margin:0px auto;
+		position:absolute;
+		top:0;
+		left:0;
+		font-size:46px;
+		line-height:200px;
+		text-align:center;
+	}
+
+
+
+</style>
+
+</head>
+<body>
+	<div class="box">
+		<div class="box_1"></div>
+		<div class="box_2"></div>
+		<div class="box_3"></div>
+		<div class="box_4"></div>
+		<div class="box_5"></div>
+		<div class="box_6"></div>
+		<div class="box_7"></div>
+		<div class="box_8"></div>
+		<div class="wen">前段开发</div>
+	</div>
+</body>
+</html>

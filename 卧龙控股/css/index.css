@@ -1,0 +1,128 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*body{
+	background:red;
+	}*/
+	*{margin:0;
+	  padding:0;}
+    body{
+		font-famiy:“微软雅黑”，Arial;
+		}
+	a{
+		text-decoration:none;
+		}	
+ /*header*/
+ .header{
+	    width:1000px;
+		height:100px;
+		background:blue;
+		margin:0 auto;
+	 }
+/*nav*/
+ .nav{
+	    width:1000px;
+		height:60px;
+		background:purple;
+		margin:0 auto;
+		}
+/*banner*/
+ .banner{
+	    width:1000px;
+		height:465px;
+		background:pink;
+		margin:0 auto;
+	 }
+/*section_one	*/
+ .section_one{
+	     width:1000px;
+		 height:240px;
+		
+		 margin:0 auto;
+	}
+	/*section_left*/
+.section_left{
+		 width:500px;
+		 height:240px;
+		 background:yellow;
+		 margin:0 auto;
+		 float:left;
+		}
+	
+	/*section_center*/
+.section_center{
+		 width:242px;
+		 height:240px;
+		 background:black;
+		 margin:0 auto;
+		 float:left;
+		}
+	
+	/*section_right	*/
+.section_right{
+		 width:258px;
+		 height:240px;
+		 background:red;
+		 margin:0 auto;
+		 float:left;
+		}
+      /*wb*/
+     .wb{   
+         width:1000px;
+		 height:240px;
+		 background:blue;
+		 margin:0 auto;
+		 }	
+  /* wb_one*/
+	.wb_one{
+		 width:200px;
+		 height:240px;
+		 background:green;
+		 margin:0 auto;
+		 float:left;
+		 }
+   
+   /*wb_two*/
+    .wb_two{
+		 width:200px;
+		 height:240px;
+		 background:gray;
+		 margin:0 auto;
+		 float:left;
+		 }
+		
+	/*wb_three*/
+	.wb_three{
+		 width:200px;
+		 height:240px;
+		 background:pink;
+		 margin:0 auto;
+		 float:left;
+		 }
+	
+	/*wb_fhe*/
+		.wb_fhe{
+	     width:400px;
+		 height:240px;
+		 background:prule;
+		 margin:0 auto;
+		 float:left;
+		 }
+    /*wel*/
+	     .wel{
+	     width:1000px;
+		 height:255px;
+		 background:black;
+		 margin:0 auto;
+		 }
+	/*weo*/
+	     .weo{
+		 width:1000px;
+		 height:83px;
+		 background:yellow;
+		 margin:0 auto;
+		 }
+	
+	
+	
+	

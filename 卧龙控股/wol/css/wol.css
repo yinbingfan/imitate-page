@@ -1,0 +1,169 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,body,div,p,dl,dt,dd,ul,li,ol,table,tr,td,form,hr,h1,h2,h3,h4,h5,h6,img,input{
+	margin:0;
+	padding:0;
+}
+list-style{:none;
+}
+
+/*header*/
+.header{
+	 width:1000px;
+	 height:100px;
+	 margin:0 auto;
+}
+.header fom{
+	
+	
+}
+.txt{
+	  width:190px;
+	height:26px;
+	border:1px solid #e5e5e5;
+	background:#f1f1f1;
+	border-right:0;
+	outline-style:none;
+	text-indent:14px;
+	vertical-align:middle;
+	float:left;
+}	 
+.sbn{
+    width:34px;
+	height:28px;
+	border:1px solid #e5e5e5;
+	border-left:none;
+	text-indent:-100px;
+	float:left;
+	}
+
+
+	  
+.sho{width:1000px;
+     height:60px;
+	 background:#323232;
+	 margin:0 auto;
+}
+.sho p{ padding-left:28px;
+       
+} 
+.sho p a{
+	 color:#ffffff;
+	 font-size:14px;
+	 line-height:60px;
+	 border-right:1px solid #434544;
+	 padding-left:0 30px;
+	 float:left;
+	 text-decoration:none;
+}
+/*ztbf*/
+.ztbf{width:1000px;
+     height:468px;
+	margin:0 auto;
+}
+/*last*/  
+.last{
+	 width:1000px;
+	 height:240px;
+	 background:white;
+	 margin:0 auto;
+	 background:gray);
+}	  
+.last_1{
+	 width:480px;
+	 height:205px;
+	 background:white;
+	 margin:0 auto;
+	 background:#FFF;
+	 float:left;
+	 padding-left:20px;
+	 padding-top:35px;
+}
+.cla_2{font-size:18px;
+       font-weight:normal;
+	   
+}
+
+
+.cla_1 span{float:right;
+}
+
+.cla_1 ul{
+	padding-top:10px;
+	padding-right:28px;
+}
+.cla_1 ul il{
+	height:25px;
+	line-height:25px;	
+}
+.cla_1 a{
+	 font-size:12px;
+	 width:290px;
+	 white-space:nowrap;
+	 overflow:hidden;
+	 text-overflow:ellipsis;
+}
+
+.last_2{
+	width:220px;
+	 height:205px;
+	 background:white;
+	 margin:0 auto;
+	 background:#CCC;
+	 float:left;
+	 padding-left:20px;
+	 padding-top:35px;
+	}
+	
+
+.last_3{
+	 width:240px;
+	 height:205px;
+	 background:white;
+	 margin:0 auto;
+	 background:url(../img/flo.jpg) no-repeat right bottom;
+	 float:left;
+	 padding-left:20px;
+	 padding-top:35px;
+	 position:relative;
+}
+.img mo{
+	position:absolute;
+	left:0;
+	bottom:89px;
+	
+	
+}
+	  
+/*cent*/
+	  
+.cent{width:980px;
+	 height:325px;
+	 background:white;
+	 margin:0 auto;
+	 background:#FFF;
+	 padding-left:20px;
+	 padding-top:35px;
+}	  
+
+.woqu{
+	width:211px;
+	height:136px;
+	background:url(../img/fej1.jpg) no-repeat;
+	margin-top:12px;
+}
+	
+	
+	
+	  
+.late{width:1000px;
+	 height:250px;
+	 background:blue;
+	 margin:0 auto;
+	 background:white;
+	 padding-left:20px;
+	 padding-top:35px;
+}	  
+	  
+	  

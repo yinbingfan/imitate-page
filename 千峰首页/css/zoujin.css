@@ -1,0 +1,126 @@
+.banner{
+	width:100%;
+	height:267px;
+	margin:0 auto;
+	background:url(../img/qfbanner.png) center;
+}
+/*secent*/
+.secent{
+	width:100%;
+	height:47px;
+	border-bottom:1px solid #e0e0e0;
+}
+.secent_0{
+	width:1000px;
+	height:47px;
+	margin:0 auto;
+	background:url(../img/tubiao.png) no-repeat  left center;
+}
+.secent_0 p{
+	color:#666666;
+	font-size:13px;
+	line-height: 47px;
+	text-indent: 26px;
+}
+.secent_1{
+	float:left;
+}
+.secent_one{
+	float:left;
+}
+.secent_two{
+	float:left;
+}
+/*send*/
+.send{
+	width:1003px;
+	height:897px;
+	margin:0 auto;
+}
+.sendone{
+	width:223px;
+	height:897px;
+	margin:0 auto;
+	background:#e5e5e5;
+	float:left;
+}
+.sendone a{
+	display:block;
+	color:#363636;
+	text-decoration:none;
+}
+.sendone_1{
+	width:223px; 
+	height:79px;
+	font-size:25px;
+	font-weight:600;
+	text-align:center;
+	line-height:79px;
+	border-bottom:1px solid #d4d4d4; 
+}
+.sendone_1:hover{
+	background:#f15a23;
+	color:#f9e5ff;
+}
+.sendone_2{
+	width:223px; 
+	height:57px;
+	font-size:16px;
+	text-align:center;
+	line-height:57px; 
+	border-bottom:1px solid #d4d4d4; 
+}
+.sendone_2:hover{
+	background:#f15a23;
+	color:#f9e5ff;
+}
+
+.sendone_3{
+	width:223px; 
+	height:57px;
+	font-size:16px;
+	text-align:center;
+	line-height:57px; 
+	border-bottom:1px solid #d4d4d4; 
+}
+.sendone_3:hover{
+	background:#f15a23;
+	color:#f9e5ff;
+}
+.send_1{
+	width:780px;
+	height:45px;
+	margin:0 auto;
+	float:left;
+	border-bottom:1px dashed #c9caca;
+}
+a.sendone_4{
+	text-decoration:none;
+	color:black;
+	line-height:45px;
+	font-size:16px;
+}
+.sendone_4{
+	width:109px;
+	height:43px;
+	border-bottom:2px solid #f15a23;
+	margin-left:40px;
+}
+.send_2{
+	width:697px;
+	height:400px;
+	float:left;
+	margin-left:44px;
+	margin-top:43px;
+}
+ul.sendfour{
+	font-size:14px;
+	text-indent:28px;
+	line-height:28px;
+}
+ul.sendfour li{
+	margin-top:10px;
+}
+ul.sendfour li span{
+	font-weight:600;
+}

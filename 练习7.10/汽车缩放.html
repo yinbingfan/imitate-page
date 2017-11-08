@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>汽车缩放</title>
+<style type="text/css">
+	html,div,p,h1,h2,h3,h4{
+		margin:0;
+		padding:0;
+	}
+	.box{
+		width: 300px;
+		height:300px;
+		background:blue;
+		margin:50px auto;
+		position:relative;
+		border-radius:50%;
+		overflow:hidden;
+	}
+	.piction img{
+		width:300px;
+		height:300px;
+		position:absolute;
+		top:0;
+		left: 0;
+		border-radius:50%;
+		transition:all 1s;
+	}
+	.zzc{
+		width:300px;
+		height:300px;
+		background:black;
+		position:absolute;
+		top:0;
+		left:0;
+		border-radius:50%;
+		transition:all 1s;
+		opacity:0;
+	}
+	.wenzi{
+		width:300px;
+		height:300px;
+		font-size:42px;
+		color:white;
+		line-height:300px;
+		text-align:center;
+		font-weight:800;
+		position:absolute;
+		top:0;
+		left: 0;
+		opacity:0;
+	}
+	.yuan{
+		width:280px;
+		height:280px;
+		border:10px solid;
+		border-top-color:yellow;
+		border-left-color:yellow;
+		border-right-color:blue;
+		border-bottom-color:blue;
+		border-radius:50%;
+		position:absolute;
+		top:0;
+		left:0;
+	}
+	.box .yuan:hover{
+		transform: rotate(180deg);
+		transition:all 1s;
+	}
+	.box:hover .zzc{
+		opacity:0.6;
+	}
+	.box:hover .wenzi{
+		opacity:1;
+		transition:all 1s;
+	}
+	.box:hover img{
+		transform:scale(1.2);
+	}
+
+</style>
+</head>
+<body>
+<div  class="box">
+	<div class="piction"><img src="img/4.jpg"></div>
+	<div class="zzc"></div>
+	<div class="wenzi">圆明园</div>
+	<div class="yuan"></div>	
+</div>
+	
+</body>
+</html>

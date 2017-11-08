@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>相册动画</title>
+<style type="text/css">
+	body{
+		background:black;
+	}
+	.box{
+		width:150px;
+		height:150px;
+		margin:150px auto;
+		position:relative;
+		perspective:1500px;
+		transform-style: preserve-3d;
+	}
+	.box_1{
+		width:150px;
+		height:150px;
+		position:absolute;
+		top:0;
+		left:0;
+		transform-style: preserve-3d;
+		animation:photo 15s linear infinite;
+	}
+	.box_1 img{
+		width:150px;
+		height:150px;
+		position:absolute;
+		top:0;
+		left:0;
+		transform-style: preserve-3d;
+	}
+	.box_1 img:nth-child(1){
+		transform:rotateY(0deg) translateZ(330px);
+	}
+	.box_1 img:nth-child(2){
+		transform:rotateY(30deg) translateZ(330px);
+	}
+	.box_1 img:nth-child(3){
+		transform:rotateY(60deg) translateZ(330px);
+	}
+	.box_1 img:nth-child(4){
+		transform:rotateY(90deg) translateZ(330px);
+	}
+	.box_1 img:nth-child(5){
+		transform:rotateY(120deg) translateZ(330px);
+	}
+	.box_1 img:nth-child(6){
+		transform:rotateY(150deg) translateZ(330px);
+	}
+	.box_1 img:nth-child(7){
+		transform:rotateY(180deg) translateZ(330px);
+	}
+	.box_1 img:nth-child(8){
+		transform:rotateY(210deg) translateZ(330px);
+	}
+	.box_1 img:nth-child(9){
+		transform:rotateY(240deg) translateZ(330px);
+	}
+	.box_1 img:nth-child(10){
+		transform:rotateY(270deg) translateZ(330px);
+	}
+	.box_1 img:nth-child(11){
+		transform:rotateY(300deg) translateZ(330px);
+	}
+	.box_1 img:nth-child(12){
+		transform:rotateY(330deg) translateZ(330px);
+	}
+	@keyframes photo{
+		0%{
+			transform:rotateX(-30deg) rotateY(0deg) ;
+		}
+		100%{
+			transform:rotateX(-30deg) rotateY(360deg);
+		}
+	}
+
+	.box_1 img:nth-child(1):hover{
+		transform:scale(1.2) rotateY(0deg) translateZ(330px);
+	}
+	.box_1 img:nth-child(2):hover{
+		transform:scale(1.2) rotateY(30deg) translateZ(330px);
+	}
+	.box_1 img:nth-child(3):hover{
+		transform:scale(1.2) rotateY(60deg) translateZ(330px);
+	}
+	.box_1 img:nth-child(4):hover{
+		transform:scale(1.2) rotateY(90deg) translateZ(330px);
+	}
+	.box_1 img:nth-child(5):hover{
+		transform:scale(1.2) rotateY(120deg) translateZ(330px);
+	}
+	.box_1 img:nth-child(6):hover{
+		transform:scale(1.2) rotateY(150deg) translateZ(330px);
+	}
+	.box_1 img:nth-child(7):hover{
+		transform:scale(1.2) rotateY(180deg) translateZ(330px);
+	}
+	.box_1 img:nth-child(8):hover{
+		transform:scale(1.2) rotateY(210deg) translateZ(330px);
+	}
+	.box_1 img:nth-child(9):hover{
+		transform:scale(1.2) rotateY(240deg) translateZ(330px);
+	}
+	.box_1 img:nth-child(10):hover{
+		transform:scale(1.2) rotateY(270deg) translateZ(330px);
+	}
+	.box_1 img:nth-child(11):hover{
+		transform:scale(1.2) rotateY(310deg) translateZ(330px);
+	}
+	.box_1 img:nth-child(12):hover{
+		transform:scale(1.2) rotateY(340deg) translateZ(330px);
+	}
+
+
+
+</style>
+</head>
+<body>	
+<div class="box">
+	<div class="box_1">
+		<img src="img/img1.jpg" alt=""/>
+		<img src="img/img2.jpg" alt=""/>
+		<img src="img/img3.jpg" alt=""/>
+		<img src="img/img4.jpg" alt=""/>
+		<img src="img/img5.jpg" alt=""/>
+		<img src="img/pic01.jpg" alt=""/>
+		<img src="img/pic02.jpg" alt=""/>
+		<img src="img/pic03.jpg" alt=""/>
+		<img src="img/pic04.jpg" alt=""/>
+		<img src="img/pic05.jpg" alt=""/>
+		<img src="img/pic06.jpg" alt=""/>
+		<img src="img/4.jpg" alt=""/>
+	</div>
+</div>
+	
+</body>
+</html>

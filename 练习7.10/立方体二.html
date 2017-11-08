@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>立方体</title>
+<style type="text/css">
+	.box{
+		width:500px;
+		height:500px;
+		margin:50px auto;
+		position:relative;
+		perspective:1500px;
+		transform-style:preserve-3d;
+		transform:rotateY(30deg);
+		/*opacity:0.6;*/
+	}
+	.box_1 a{
+		width:500px;
+		height:500px;
+		margin:0 auto;
+		position:absolute;
+		top:0;
+		left:0;
+		font-size:32px;
+		text-align:center;
+		text-decoration: none;
+		line-height:500px;
+		color:black;
+		opacity:0.6;
+	}
+	.box_1 a:nth-of-type(1){
+		background:red;
+		transform:translateZ(250px);
+	}
+	.box_1 a:nth-of-type(2){
+		background:yellow;
+		transform:translateZ(-250px);
+	}
+	.box_1 a:nth-of-type(3){
+		background:pink;
+		transform:rotateY(-90deg) translateZ(250px);
+	}
+	.box_1 a:nth-of-type(4){
+		background:blue;
+		transform:rotateY(90deg) translateZ(250px);
+	}
+	.box_1 a:nth-of-type(5){
+		background:green;
+		transform:rotateX(90deg) translateZ(250px);
+	}
+	.box_1 a:nth-of-type(6){
+		background:purple;
+		transform:rotateX(-90deg) translateZ(250px);
+	}
+
+</style>
+</head>
+<body>
+	<div class="box">
+		<div class="box_1">
+			<a href="#">前</a>
+			<a href="#">后</a>
+			<a href="#">左</a>
+			<a href="#">右</a>
+			<a href="#">上</a>
+			<a href="#">下</a>
+		</div>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,123 @@
+html,body,div,p,ol,ul,li,dl,dt,dd,form,table,tr,td,h1,h2,h3,h4,h5,h6,hr,img,input{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	font-size:100px;
+}
+body{
+	font-family: "微软雅黑",Arial;
+	/*background:red;*/
+}
+ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border:none;
+	display: block;
+}
+/*header*/
+header{
+	display:flex;
+	flex:1;
+	background:#12b7f5;
+}
+.box a{
+	flex:1;
+	font-size:20px;
+	font-weight: 800;
+	color:#ffffff;
+	line-height:46px;
+	text-align:center;
+}
+header a img{
+	width:13px;
+	height:21px;
+	padding-top:10px;
+}
+.box{
+	display:flex;
+	flex:1;
+}
+/*.banner*/
+/*nav*/
+nav{
+	display:flex;
+	flex:1;
+	justify-content:space-around;
+	border-bottom:1px solid #808080;
+	}
+nav a{
+	display:flex;
+	font-size:18px;
+	color:#808080;
+	line-height:44px;
+	text-align:center;
+}
+nav a:hover{
+	color:#12b7f5;
+}
+/*section*/
+.section{
+	display:flex;
+	flex:1;
+	justify-content:center;
+	margin-top:17px;
+	font-size:16px;
+	font-weight:700;
+	line-height:17px;
+	color: #12b7f5;
+	text-align:center;
+}
+.box_1{
+	width:40%;
+	border-bottom:1px dashed #67d1f9;
+	align-self:center;
+}
+.box_2{
+	width:40%;
+	border-bottom:1px dashed #67d1f9;
+	align-self:center;
+}
+
+/*send*/
+.send{
+	overflow:scroll;
+
+	margin-top: 28px;
+}
+.send_one{
+	display:flex;
+}
+.sent_one{
+	width:93px
+	height:94px;
+}
+.sent_four{
+	display:flex;
+	flex-flow:row wrap;
+}
+.sent_two a{
+	display:block;
+	font-size:18px;
+	font-weight:600;
+	color:black;
+	line-height:25px;
+}
+.sent_three{
+	font-size:16px;
+	color:#777777;
+	line-height:25px;
+	align-self:flex-start;
+	border-bottom:1px solid #dedfe0;
+}
+.send_two{
+	display:flex;
+}
+.send_three{
+	display:flex;
+}

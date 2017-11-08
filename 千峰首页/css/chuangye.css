@@ -1,0 +1,89 @@
+/*banner*/
+.banner{
+	width:100%;
+	height:267px;
+	background:url(../img/banner_1.png )
+}
+/*secent*/
+.secent{
+	width:100%;
+	height:47px;
+	border-bottom:1px solid #e0e0e0;
+}
+.secent_0{
+	width:1000px;
+	height:47px;
+	margin:0 auto;
+	background:url(../img/tubiao.png) no-repeat  left center;
+}
+.secent_0 p{
+	color:#666666;
+	font-size:13px;
+	line-height: 47px;
+	text-indent: 26px;
+}
+.secent_1{
+	float:left;
+}
+.secent_one{
+	float:left;
+}
+
+
+
+/*send*/
+.send{
+	height:520px;
+	width:100%;
+	margin:0 auto;
+}
+.qianfeng{
+	height:426px;
+	width:974px;
+	margin:0 auto;
+	padding:15px 0;
+}
+.qian_0 {
+	font-size:13px;
+	line-height:28px;
+	margin-bottom:20px;
+	text-indent:26px;
+}
+.qian_0 span{
+	color:#f15a23;
+}
+.qian_1{
+	font-size:13px;
+	line-height:28px;
+	margin-bottom:18px;
+	text-indent:26px;
+}
+.qian_2{
+	font-size:13px;
+	line-height:28px;
+	margin-bottom:15px;
+	margin-left:26px;
+}
+.qian_3{
+	font-size:13px;
+	line-height:28px;
+	margin-bottom:15px;
+	text-indent:26px;
+}
+.qian_4{
+	font-size:18px;
+	color:#f15a23;
+	line-height:33px;
+	text-indent:26px;
+}
+
+
+
+
+/*sendone*/
+.sendone{
+	height:342px;
+	width:1000px;
+	margin:0 auto;
+	background:url(../img/fenghuangshe.png) no-repeat;
+}
