@@ -1,0 +1,231 @@
+
+/*初始化公共样式*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,table,th,td,img,textarea{
+		margin:0;
+		padding:0;
+		}
+body{
+	font-family:"微软雅黑" , Arial;
+	}
+h1,h2,h3,h4,h5,h6{
+	font-size:12px;
+	font-weight:normal;
+}
+
+ul,ol,li{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+img{
+	border: none;
+}
+
+/*初始化公共样式*/	
+body {
+    height: 100%;
+    background: url(../img/login_bg.gif);
+    animation: background 150s linear infinite;
+   
+}
+.header {
+    width: 100%;
+    height: 89px;
+    border-bottom: 1px solid #c5c5c5;
+    background: #fff;
+    font: 12px/1.5 "Microsoft YaHei" tahoma, arial, "Hiragino Sans GB", 宋体, sans-serif;
+}
+.head{
+	width: 980px;
+	display: flex;
+    justify-content: space-between;
+    margin:0 auto ;
+}
+.headLeft{
+	margin-top: 20px;
+}
+.headRight{
+	margin-top: 28px;
+	height: 30px;
+	line-height: 30px;
+	
+}
+.headRight a{
+	color: black;
+	font-size:14px;
+}
+.fico{
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	margin-right:5px;
+    background: url(../img/loginIcon.gif) no-repeat -1px -1px;
+}
+.ficon{
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+    background: url(../img/loginIcon.gif) no-repeat -25px -1px;
+}
+/*内容*/	
+
+.mid{
+	width:980px;
+	/*overflow: hidden;*/
+	margin: 0 auto;
+	margin-top: 70px;
+	display: flex;
+	justify-content:space-around;
+}
+.midImg img{
+	width: 437px;
+	height: 437px;
+}
+form{
+	width: 488px;
+	height: 435px;
+	background: #FFF;
+	border: 1px solid #C5C5C5;
+	position: relative;
+}
+legend {
+	display: block;
+    margin:30px 167px;
+    color: #000;
+}
+
+label{
+	width: 28px;
+	height: 28px;
+	vertical-align: middle;
+	display:inline-block;
+	background: url(../img/loginIcon.gif)no-repeat -94px -3px ;
+}
+.formt{
+    width: 348px;
+    height: 52px;
+    line-height: 52px;
+    border: 1px solid #c5c5c5;
+    margin:0 77px;
+    text-indent:30px;
+}
+.bt{
+	border-top: none;
+}
+ input{
+	border: none;
+}
+#emil{
+	width: 120px;
+}
+.tlit{
+	font-size: 12px;
+}
+.pass{
+	font-size: 12px;
+}
+.txt{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background:url(../img/loginIcon.gif) no-repeat -46px -2px ;
+}
+.btn{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background: url(../img/loginIcon.gif)no-repeat -72px -1px;
+}
+.ched{
+	width: 348px;
+    height: 52px;
+    line-height: 52px;
+	margin:0 77px;
+	
+}
+.ched input{
+	width: 18px;
+	height: 18px;
+	float: left;
+	background: none;
+	border: 1px solid #c5c5c5 ;
+	margin:18px 0;
+}
+.ched a{
+	float:right;
+	color: black;
+}
+
+.sub{
+	width: 348px;
+    height: 52px;
+    line-height: 52px;
+    border: 1px solid #dc0014;
+    margin:0 77px;
+    background: #fe0a2e;  
+}
+.sub input{
+	margin: 0 147px;
+	color: white;
+	font-size: 20px;
+	background: none;
+}
+.linde{
+	width:432px;
+    height:7px;
+    margin:9px 32px 3px;
+    background: url(../img/dashed_bg_06.gif);
+}
+.usel{
+	width: 350px;
+	margin:5px 67px;
+}
+.tubiao{
+	margin-left: 67px;
+}
+.qiaq{
+	width: 38px;
+	height: 38px;
+	display: inline-block;
+	background: url(../img/qq.png);
+}
+.zhifu{
+	width: 38px;
+	height: 38px;
+	display: inline-block;
+	background: url(../img/zfb.png) no-repeat;
+}
+.weixin{
+	width: 38px;
+	height: 38px;
+	display: inline-block;
+	background: url(../img/ico38.png) no-repeat;
+}
+.reg {
+    position: absolute;
+    display: block;
+    right:-1px;
+    bottom: -39px;
+    width: 113px;
+    height: 38px;
+    text-align: center;
+    line-height: 38px;
+    color: #fff;
+    background: #ff0421;
+}
+/*底部*/
+.footer{
+	margin-top: 50px;
+	text-align: center;
+	background: #f2f2f2;
+	font-size: 12px;
+}
+.foot{
+	padding-top: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+.foot a{
+	color: black;
+}

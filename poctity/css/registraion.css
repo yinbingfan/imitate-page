@@ -1,0 +1,238 @@
+/*初始化公共样式*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,table,th,td,img,textarea{
+		margin:0;
+		padding:0;
+		}
+body{
+	font-family:"微软雅黑" , Arial;
+	}
+h1,h2,h3,h4,h5,h6{
+	font-size:12px;
+	font-weight:normal;
+}
+
+ul,ol,li{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+img{
+	border: none;
+}
+
+/*初始化公共样式*/	
+body {
+    height: 100%;
+    background: url(../img/login_bg.gif);
+    animation: background 150s linear infinite;
+   
+}
+.header {
+    width: 100%;
+    height: 89px;
+    border-bottom: 1px solid #c5c5c5;
+    background: #fff;
+    font: 12px/1.5 "Microsoft YaHei" tahoma, arial, "Hiragino Sans GB", 宋体, sans-serif;
+}
+.head{
+	width: 980px;
+	display: flex;
+    justify-content: space-between;
+    margin:0 auto ;
+}
+.headLeft{
+	margin-top: 20px;
+}
+.headRight{
+	margin-top: 28px;
+	height: 30px;
+	line-height: 30px;
+	
+}
+.headRight a{
+	color: black;
+	font-size:14px;
+}
+.fico{
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	margin-right:5px;
+    background: url(../img/loginIcon.gif) no-repeat -1px -1px;
+}
+.ficon{
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+    background: url(../img/loginIcon.gif) no-repeat -25px -1px;
+}
+/*内容*/	
+.content{
+	padding-top:40px;
+}
+.mid{
+	width: 980px;
+	height: 578px;
+	background: white;
+	margin-top:20px;
+	margin: 0 auto;
+	border: 6px solid rgba(199,199,199,0.7);
+}
+.fact{
+	height: 35px;
+    width: 515px;
+    line-height: 35px;
+    margin: 33px auto 0 auto;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+.fact span{
+	width: 15px;
+	height: 24px;
+	margin-left:70px;
+	vertical-align: middle;
+	display: inline-block;
+	background:url(../img/loginIcon.gif) no-repeat  -387px -5px;
+	
+}
+
+form{
+	width: 600px;
+	height: 580px;
+	float: left;
+	border-right:1px solid #dcdcdc ;
+	position: relative;
+}
+.midImg{
+	display: inline-block;
+	margin-top: 83px;
+    margin-left: 35px;
+	float: left;
+}
+.mid img{
+	width:300px;
+	height:356px;
+}
+.actbd{
+	margin:0 22px;
+	position: absolute;
+    left: 0;
+    width: 100%;
+    height: 7px;
+    background: url(../img/loginIcon.gif) no-repeat left -37px;
+}
+label{
+	display: inline-block;
+    margin-left: 18px;
+    color: #969696;
+    vertical-align: middle;
+}
+input{
+	border: none;
+	
+	background: none;
+}
+#phone{
+	width: 100px;
+}
+#password{
+	width: 115px;
+}
+.actio{
+	margin:38px 113px 0;
+	font-size: 12px;
+}
+.menu{
+	width: 348px;
+	height: 52px;
+	border: 1px solid #C5C5C5;
+	line-height: 52px;
+}
+.inter{
+	margin-bottom: 15px;
+}
+.int{
+	border-bottom:none;
+}
+.mobli{
+	width: 15px;
+	height: 24px;
+	margin-left: 12px;
+	vertical-align: middle;
+	display: inline-block;
+	background:url(../img/loginIcon.gif) no-repeat  -387px -5px;
+}
+#huan{
+	border: none;
+}
+.verif{
+	float: left;
+	border: 1px solid #C5C5C5;
+}
+.verif input{
+	width: 110px;
+	height: 27px;
+}
+
+
+.verify{
+	float: right;
+	
+}
+
+#yanz{
+	 margin-left: 12px;
+    display: inline-block;
+    height: 31px;
+    width: 100px;
+    line-height: 31px;
+    border: 1px solid #ddd;
+    padding: 0px 8px;
+    color: #646464;
+	
+}
+#xiaoyan{
+	width: 105px;
+	height: 30px;
+	line-height: 30px;
+	font-weight: 800;
+	border: 1px solid #C5C5C5;	
+}
+#subm{
+	width: 348px;
+	height: 52px;
+	border: 1px solid #a8221f;
+	line-height: 52px;
+	color: white;
+	text-align: center;
+	border-radius: 2px;
+	background: #fe4a49;
+	box-shadow: inset 0 0 1px rgba(255,255,255,0.9);
+	cursor: pointer;
+}
+.agreement{
+	line-height: 40px;
+}
+.agreement a{
+	color: #325e8f;
+	cursor: pointer;
+}
+   
+
+
+/*底部*/
+.footer{
+	margin-top: 50px;
+	text-align: center;
+	background: #f2f2f2;
+	font-size: 12px;
+}
+.foot{
+	padding-top: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+.foot a{
+	color: black;
+}

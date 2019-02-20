@@ -1,0 +1,1473 @@
+/*初始化公共样式*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,table,th,td,img,textarea{
+		margin:0;
+		padding:0;
+		}
+body{
+	font-family:"微软雅黑" , Arial;
+	}
+h1,h2,h3,h4,h5,h6{
+	font-size:12px;
+	font-weight:normal;
+}
+
+ul,ol,li{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+img{
+	border: none;
+}
+
+/*初始化公共样式*/	
+/*导航*/
+/*子导航:subNav*/
+.subNav{
+	width: 1343px;
+	height: 32px;
+	background:#3E3A39;
+	margin: 0 auto;
+}
+.subNa{
+	width: 1200px;
+	height: 32px;
+	margin: 0 auto;
+	display: flex;
+	justify-content:space-between;
+}
+.subNavleft{
+	width:120px;
+	height: 30px;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-around;
+}
+.sulefticon{
+	display: inline-block;
+}
+.sulefticon img{
+	width:12px;
+	height:12px;
+	margin: 8px 0 ;
+}
+.subNavleft span{
+	color: #ccc;
+	text-indent:5px;
+	font-size: 13px;
+	line-height: 30px;
+}
+.subNavleft b{
+	padding:2px 0;
+	color: #ccc;
+	font-size:12px;
+	line-height: 30px;
+}
+.subNavright{
+	width: 840px;
+	height: 32px;
+	display: flex;
+	justify-content: space-around;
+}
+.subNavright li a{
+	line-height: 32px;
+	color: #ccc;
+	font-size: 13px;
+}
+.subNavright li .rit{
+	color:yellow;
+	margin-left:10px;
+}
+.subNavright span{
+	line-height:32px;
+	color: #ccc;
+}
+.subNavright b{
+	font-size: 20px;
+}
+.Qcode{
+	position: absolute;
+	top:32px;
+	left:40px;
+	display: none;
+}
+.Qcode img{
+	width: 200px;
+	height: 200px;
+}
+
+/*广告:banner*/
+.banner{
+	display: inline-block;
+	margin:0 70px;
+	
+}
+/*搜索:search*/
+.search{
+	width: 1200px;
+	height: 110px;
+	padding:10px 0;
+	margin: 0 auto;
+	display:flex;
+	justify-content: space-between;
+}
+.searchImg{
+	align-self: center;
+}
+.searchIm{
+	align-self: center;
+}
+.searc{
+	width: 450px;
+	height: 62px;
+	align-self: center;
+}
+.searc input:nth-of-type(1){
+	width:356px;
+	height:36px;
+	float:left;
+	border-bottom-left-radius:5px;
+	border-top-left-radius:5px;
+	border: 2px solid #c40000;
+}
+.searc input:nth-of-type(2){
+	width:83px;
+	height:40px;
+	border: none;
+	color:white;
+	float:left;
+	font-size: 18px;
+	background: #c40000;
+}
+.searc_details{
+	width:450px;
+	height:20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.searc_details a{
+	color:#E17F7F;
+	font-size: 12px;
+}
+.searc_details span{
+	color:gray;
+}
+
+
+.search_car{
+	width: 141px;
+	height: 36px;
+	align-self: center;
+	background:#f9f9f9;
+	border: 1px solid #dfdfdf;
+}
+.search_car a{
+	width: 78px;
+	height: 12px;
+	position:relative;
+	color: #666;
+}
+.search_car a i{
+	display: inline-block;
+	width: 27px;
+	height: 40px;
+	background: url(../img/shopcar.png)no-repeat left center ;
+}
+.qipao{
+	position:absolute;
+	top:-40px;
+	left: 0px;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: url(../img/qipao.png);
+}
+.search_car a i+span{
+	display: inline-block;
+	width: 78px;
+	height: 12px;
+	font-size: 13px;
+	color: #666;
+	position:absolute;
+	top:-13px;
+	left:28px;
+}
+.search_car a .dayu{
+	font-size: 20px;
+	position:absolute;
+	top:-18px;
+	left:112px;
+}
+/*导航*/
+.navigation{
+	width: 1200px;
+	height: 45px;
+	margin: 0 auto;
+}
+.navlis{
+	width: 1200px;
+	height: 45px;
+	display: flex;
+	justify-content:space-between;
+}
+.navlis li{
+	line-height:45px;
+}
+.navlis li a.allClassifications{
+	background: #CC0210;
+	color:white;
+}
+.navlis li a{
+	color: #333;
+}
+.navlis li:nth-of-type(1){
+	width: 158px;
+	height: 45px;
+	text-align: center;
+	background: #CC0210;
+	font-size: 18px;
+}
+
+
+.navlis li:nth-of-type(3){
+	width: 95px;
+	height: 45px;
+	background:url(../img/hoticon.gif);
+}
+.allClassifications{
+	position: relative;
+	
+}
+/*菜单:menu*/
+.allClass{
+	position: absolute;
+	top:290px;
+	left:75px;
+	z-index: 200;
+	display: none;
+}
+.navlis .allClass li{
+	width: 158px;
+    height: 47px;
+    background: rgba(204,2,16,.9);
+}
+.navlis .allClass li a{
+	display:flex;
+    justify-content: space-around;  
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+	position:relative;
+	
+}
+.navlis .allClass li i{
+	display: inline-block;
+	align-self:center;
+	
+}
+.navlis .allClass li span{
+	color: rgba(255,255,255,.3);
+	 font-size: 20px;
+}
+/*子菜单:subMenu*/
+.navlis .allClass li .allClassifright{
+	width:1042px;
+	height: 469px;
+	border-top:1px solid #E5E5E5 ;
+	position: absolute;
+	top:0px;
+	left:158px;
+	background: white;
+}
+/*三级菜单*/
+/*一键选择*/
+.keychoose{
+	z-index: 100;
+	display: none;	
+}
+
+.keychooseLeft{
+	width: 730px;
+	height: 425px;
+	float: left;
+}
+.keychooseLeft dl dd {
+	float: left;
+	margin:5px;
+	color:gray;
+}
+
+.keychooseLeft dt{
+	line-height: 32px;
+	text-align:left;
+	border-bottom: 1px solid gainsboro;
+}
+.chooseLeftone{
+	width: 580px;
+	height: 120px;
+	margin: 0 auto;
+	font-size: 14px;
+	margin-left: 40px;
+}
+.chooseLefttwo{
+	width: 670px;
+	height: 120px;
+	float: left;
+	font-size: 14px;
+	margin-left: 40px;
+}
+
+.juhui{
+	width: 290px;
+	height: 120px;
+	float:left ;
+}
+.mingzhu{
+	width: 290px;
+	height: 120px;
+	float: left;
+	margin-left: 60px;
+}
+.chooseLeftthree{
+	width: 290px;
+	height: 90px;
+	float: left;
+	font-size: 14px;
+	margin-left: 40px;
+	margin-top:20px;
+	color: black;
+}
+.keychooseRight{
+	width:312px;
+	height: 470px;
+	float: left;
+	background:#EAEAEA;
+	
+}
+.chooseRighImg{
+	float: left;
+	margin: 30px 34px 0;
+	
+}
+.chooseRighImg img{
+	width: 80px;
+	height: 80px;
+	float: left;
+	border-bottom: 1px solid gainsboro;
+	border-left: 1px solid gainsboro;
+}
+
+/*白酒三级菜单*/
+.bajiu{
+	display: none;
+	z-index: 100;
+}
+
+.liqueurLeft{
+	width: 730px;
+	height: 425px;
+	float: left;
+}
+.liqueurLeft dl dd {
+	float: left;
+	margin:5px;
+	color:gray;
+}
+
+.liqueurLeft dt{
+	line-height: 32px;
+	text-align:left;
+	border-bottom: 1px solid gainsboro;
+}
+.liqueurone{
+	width: 580px;
+	height: 120px;
+	margin: 0 auto;
+	font-size: 14px;
+	margin-left: 40px;
+}
+.liqueurtwo{
+	width: 670px;
+	height: 120px;
+	float: left;
+	font-size: 14px;
+	margin-left: 40px;
+}
+
+.Scent{
+	width: 290px;
+	height: 120px;
+	float:left ;
+}
+.spread{
+	width: 290px;
+	height: 120px;
+	float: left;
+	margin-left: 60px;
+}
+.liqueurthree{
+	width:670px;
+	height: 90px;
+	float: left;
+	font-size: 14px;
+	margin-left: 40px;
+	margin-top:20px;
+	color: black;
+}
+.liqueurRinght{
+	width:312px;
+	height: 470px;
+	float: left;
+	background:#EAEAEA;
+	
+}
+.liqueurRighImg{
+	float: left;
+	margin: 30px 34px 0;
+	
+}
+.liqueurRighImg img{
+	width: 80px;
+	height: 80px;
+	float: left;
+	border-bottom: 1px solid gainsboro;
+	border-left: 1px solid gainsboro;
+}
+
+/*葡萄酒*/
+.grapewine{
+	z-index:100;
+	display: none;
+}
+.grapewineLeft{
+	width: 730px;
+	height: 425px;
+	float: left;
+}
+.grapewineLeft dl dd {
+	float: left;
+	margin:2px;
+	color:gray;
+}
+
+.grapewineLeft dt{
+	line-height: 32px;
+	text-align:left;
+	border-bottom: 1px solid gainsboro;
+}
+.grapewineone{
+	width: 580px;
+	height: 120px;
+	margin: 0 auto;
+	font-size: 14px;
+	margin-left: 40px;
+}
+.grapewinetwo{
+	width: 670px;
+	height: 120px;
+	float: left;
+	font-size: 14px;
+	margin-left: 40px;
+}
+
+.category{
+	width: 290px;
+	height: 120px;
+	float:left ;
+}
+.state{
+	width: 290px;
+	height: 120px;
+	float: left;
+	margin-left: 60px;
+}
+.grapewinethree{
+	width:670px;
+	height: 90px;
+	float: left;
+	font-size: 14px;
+	margin-left: 40px;
+	margin-top:20px;
+	color: black;
+}
+.grapewinefour{
+	width: 580px;
+	margin: 0 auto;
+	font-size: 14px;
+	margin-left: 40px;
+	margin-top:20px;
+	float: left;
+}
+.grapewineRinght{
+	width:312px;
+	height: 470px;
+	float: left;
+	background:#EAEAEA;	
+}
+.grapewineRighImg{
+	float: left;
+	margin: 30px 34px 0;	
+}
+.grapewineRighImg img{
+	width: 80px;
+	height: 80px;
+	float: left;
+	border-bottom: 1px solid gainsboro;
+	border-left: 1px solid gainsboro;
+}
+
+/*洋酒三级菜单*/
+.importedwines{
+	z-index:100;
+	display: none;
+	
+}
+.importedwinesLeft{
+	width: 730px;
+	height: 425px;
+	float: left;
+}
+.importedwinesLeft dl dd {
+	float: left;
+	margin:5px;
+	color:gray;
+}
+
+.importedwinesLeft dt{
+	line-height: 32px;
+	text-align:left;
+	border-bottom: 1px solid gainsboro;
+}
+.grapewineone{
+	width: 580px;
+	height: 120px;
+	margin: 0 auto;
+	font-size: 14px;
+	float: left;
+	margin-left: 40px;
+}
+.importedwinestwo{
+	width: 670px;
+	height: 120px;
+	float: left;
+	font-size: 14px;
+	margin-left: 40px;
+}
+
+.importedwinesthree{
+	width:670px;
+	height: 90px;
+	float: left;
+	font-size: 14px;
+	margin-left: 40px;
+	margin-top:20px;
+	color: black;
+}
+
+.importedwinesRinght{
+	width:312px;
+	height: 470px;
+	float: left;
+	background:#EAEAEA;	
+}
+.importedwinesRighImg{
+	float: left;
+	margin: 30px 34px 0;	
+}
+.importedwinesRighImg img{
+	width: 80px;
+	height: 80px;
+	float: left;
+	border-bottom: 1px solid gainsboro;
+	border-left: 1px solid gainsboro;
+}
+/*黄酒三级*/
+.yellowRice{
+	z-index:100;
+	display: none;
+	
+}
+.yellowRiceLeft{
+	width: 730px;
+	height: 425px;
+	float: left;
+}
+.yellowRiceLeft dl dd {
+	float: left;
+	margin:5px;
+	color:gray;
+}
+
+.yellowRiceLeft dt{
+	line-height: 32px;
+	text-align:left;
+	border-bottom: 1px solid gainsboro;
+}
+.yellowRiceone{
+	width: 580px;
+	height: 120px;
+	margin: 0 auto;
+	font-size: 14px;
+	float: left;
+	margin-left: 40px;
+}
+.yellowRicetwo{
+	width: 670px;
+	height: 120px;
+	float: left;
+	font-size: 14px;
+	margin-left: 40px;
+}
+
+.yellowRiceRinght{
+	width:312px;
+	height: 470px;
+	float: left;
+	background:#EAEAEA;	
+}
+.yellowRiceRighImg{
+	float: left;
+	margin: 30px 34px 0;	
+}
+.yellowRiceRighImg img{
+	width: 80px;
+	height: 80px;
+	float: left;
+	border-bottom: 1px solid gainsboro;
+	border-left: 1px solid gainsboro;
+}
+/*清酒三级*/
+.sake{
+	z-index:100;
+	display: none;
+	
+}
+.sakeLeft{
+	width: 730px;
+	height: 425px;
+	float: left;
+}
+.sakeLeft dl dd {
+	float: left;
+	margin:5px;
+	color:gray;
+}
+
+.sakeLeft dt{
+	line-height: 32px;
+	text-align:left;
+	border-bottom: 1px solid gainsboro;
+}
+.sakeone{
+	width: 580px;
+	height: 120px;
+	margin: 0 auto;
+	font-size: 14px;
+	float: left;
+	margin-left: 40px;
+}
+.saketwo{
+	width: 670px;
+	height: 120px;
+	float: left;
+	font-size: 14px;
+	margin-left: 40px;
+}
+
+.sakeRinght{
+	width:312px;
+	height: 470px;
+	float: left;
+	background:#EAEAEA;	
+}
+.sakeRinghtImg{
+	float: left;
+	margin: 30px 34px 0;	
+}
+.sakeRinghtImg img{
+	width: 80px;
+	height: 80px;
+	float: left;
+	border-bottom: 1px solid gainsboro;
+	border-left: 1px solid gainsboro;
+}
+/*啤酒三级菜单*/
+.Beer{
+	z-index:100;
+	display: none;
+	
+}
+.BeerLeft{
+	width: 730px;
+	height: 425px;
+	float: left;
+}
+.BeerLeft dl dd {
+	float: left;
+	margin:5px;
+	color:gray;
+}
+
+.BeerLeft dt{
+	line-height: 32px;
+	text-align:left;
+	border-bottom: 1px solid gainsboro;
+}
+.Beerone{
+	width: 580px;
+	height: 120px;
+	margin: 0 auto;
+	font-size: 14px;
+	float: left;
+	margin-left: 40px;
+}
+.Beertwo{
+	width: 670px;
+	height: 120px;
+	float: left;
+	font-size: 14px;
+	margin-left: 40px;
+}
+
+.BeerRinght{
+	width:312px;
+	height: 470px;
+	float: left;
+	background:#EAEAEA;	
+}
+.BeerRinghtImg{
+	float: left;
+	margin: 30px 34px 0;	
+}
+.BeerRinghtImg img{
+	width: 80px;
+	height: 80px;
+	float: left;
+	border-bottom: 1px solid gainsboro;
+	border-left: 1px solid gainsboro;
+}
+
+/*酒具周边三级菜单*/
+.cocktail{
+	z-index:100;
+	display: none;
+	
+}
+.cocktailLeft{
+	width: 730px;
+	height: 425px;
+	
+}
+.cocktailLeft dl dd {
+	float: left;
+	margin:5px;
+	color:gray;
+}
+
+.cocktailLeft dt{
+	line-height: 32px;
+	text-align:left;
+	border-bottom: 1px solid gainsboro;
+}
+.cocktailone{
+	width: 580px;
+	height: 120px;
+	margin: 0 auto;
+	font-size: 14px;
+	float: left;
+	margin-left: 40px;
+}
+.cocktailtwo{
+	width: 670px;
+	height: 120px;
+	float: left;
+	font-size: 14px;
+	margin-left: 40px;
+}
+/*三级菜单结束*/
+
+/*导航结束*/
+
+/*侧栏:sideBar*/
+.sideBar{
+	width:32px;
+	height:100%;
+	position:fixed;
+	top: 0;
+	right:0px;
+	z-index:100;
+	background: #eaeaea;
+	
+}
+.sideBatop{
+	margin-top:120px;
+}
+.sideBatop a{
+	display: block;
+	border-bottom: 1px solid gray;
+	color: #C40000;
+	margin:15px 5px;
+	text-align: center;
+}
+.faicon{
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	margin:2px 0;
+	position: relative;
+	
+}
+.sideB{
+	width: 120px;
+	height: 40px;
+	position:absolute;
+	display: none;
+	background:black;
+	opacity: 0.8;
+	z-index: 10000;
+	text-align: center;
+	color: white;
+	line-height: 40px;
+	font-size: 13px;
+}
+.member{
+	background:url(../img/side1.png)no-repeat;
+}
+.detrim{
+	background: url(../img/side9.png)  no-repeat;
+}
+.enshri{
+	background: url(../img/sdie2.png)no-repeat;
+}
+.QuicMark{
+	background: url(../img/sdie3.png)no-repeat;
+}
+.better{
+	background: url(../img/sdie5.png)no-repeat;
+}
+.linese{
+	background: url(../img/sdie6.png) no-repeat;
+}
+
+
+.tickling{
+	margin-top:40px;
+	background: url(../img/sdie7.png)no-repeat;
+}
+
+.BackTop{
+	background: url(../img/sdie8.png)no-repeat ;
+}
+
+.QuickMark img{
+	width:150px;
+	height:150px;
+}
+
+.memberCenter{
+	top:106px;
+	left:-185px;	
+}
+.stock{
+	top:249px;
+	left:-185px;
+}
+.enshrine{
+	top:291px;
+	left:-185px;
+}
+.QuickMark{
+	position:absolute;
+	display: none;
+	z-index: 1000;
+	top:331px;
+	left:-200px;
+}
+.bett{
+	position:absolute;
+	display: none;
+	z-index: 1000;
+	top:370px;
+	left:-300px;
+}
+.lineso{
+	top:413px;
+	left:-185px;
+}
+.tick{
+	top:493px;
+	left:-185px;
+}
+.Backtop{
+	top:533px;
+	left:-185px;
+}
+/*固定头部*/
+.headlock{
+	height: 50px;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top:0px;
+	z-index: 10000;
+	background:rgba(221,39,39,.95);
+	display: none;
+}
+
+.headlockLeft{
+	display: inline-block;	
+	margin:6px 100px;
+}
+.headlockLeft img{
+	height: 40px;
+	
+	
+}
+
+
+.headlockRight{
+	position: absolute;
+	top:6px;
+	left:390px;
+}
+
+
+.headlockRight input:nth-of-type(1) {
+	width: 566px;
+	height: 33px;
+	background:white;
+	font-size: 14px;
+	color:gray;
+	text-indent:20px;
+	border: 3px solid #C40000;
+}
+
+.headlockRight input:nth-of-type(2) {
+	width:86px;
+	height:39px;
+	background: #C40000;
+	font-size: 16px;
+	cursor: pointer;
+	color: white;
+	border: none;
+}
+/*轮播图*/
+.swiper-container{
+	width: 100%;
+	height:100%;
+	margin: 0 auto;	
+	position: relative
+	
+}
+.swiper-wrapper{
+	width: 1200px;
+	overflow: hidden;
+	position: relative;
+	margin: 0 auto;
+}
+.swiper-slide{
+	width: 100%;
+	background-position: center;
+    background-size: cover;
+}
+.swiper-slide img{
+	width: 100%;
+	height: 100%;
+}
+/*轮播图*/
+/*内容*/
+.contents{
+	margin: 0 auto;
+	width: 1200px;
+	color:#666666;
+	font: 12px/150% Arial,Verdana,"\5b8b\4f53";
+}
+.add-box{
+	margin: 0 auto;
+    width: 1200px;
+	height: 172px;
+	margin-top: 20px;
+    margin-bottom: 30px;
+	background:url(../image/xianshiBg.jpg) no-repeat center 20px;
+}
+.add-box li{
+	float:right;
+}
+
+.min-content{
+	background: #F5F5F5;
+    padding-bottom: 20px;
+    width: 100%;
+    float: left;
+}
+.hotsaleLeft{
+	width: 845px;
+	float: left;
+}
+.hotsaleLefthead{
+	height: 41px;
+    border-bottom: 3px solid #000;
+}
+.hotsaleLefthead h2{
+	width: 223px;
+    background-position: -81px 0;
+	background-image: url(../image/import_icon.png);
+    background-repeat: no-repeat;
+    height: 41px;	
+    float: left;
+}
+.hotsaleLefthead span i{
+	display: inline-block;
+	width: 14px;
+    height: 17px;
+    background: url(../image/import_icon.png) no-repeat -529px 0;
+    vertical-align: middle;
+}
+.hotsaleLefthead span{
+	float: right;
+	display: inline-block;
+	margin-top: 18px;
+    height: 17px;
+    line-height: 17px;
+    cursor: pointer;
+	
+} 
+ .hostli{
+ 	margin-top: 7px;
+    height: 1126px;
+}
+.hostli li{
+	margin-top: 8px;
+    width: 845px;
+    height: 217px;
+}
+
+.hotsaleRight{
+	width: 332px;
+	float:right;
+}
+.hotsaleRight h2{
+	margin-top: 11px;
+    background: #e79d35;
+    line-height: 33px;
+    height: 33px;
+    text-indent: 16px;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+.hostbox{
+	position: relative;
+    height: 385px;
+	margin-bottom: 22px;
+    padding: 15px;
+    border: 1px solid #c8c8c8;
+    width: 300px;
+   
+}
+.hostImg{
+  	position: relative;
+  	overflow: hidden;
+  	width: 300px;
+	height: 385px;
+}
+.hostI{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1500px;
+	height: 385px;
+	
+}
+.hostIm img{
+	width: 300px;
+	height: 385px;
+	float: left;
+}
+
+.dian{
+	position: absolute;
+	left:90px;
+    bottom:-370px;
+}
+.dian li{
+	float: left;
+	margin-left:10px ;
+	display: inline-block;
+	width: 30px;
+	height: 6px;
+	background:white;
+}
+
+.hostxiang{
+	position: relative;
+    height: 612px;
+    overflow: hidden;
+	margin-bottom: 22px;
+    padding: 15px;
+    border: 1px solid #c8c8c8;
+    width: 300px;
+    background: #fffafa;
+    font-family: "Microsoft Yahei";
+}
+
+.hostxiang h3{
+	height: 34px;
+    line-height: 34px;
+    border-bottom: 2px solid #ffc589;
+    text-align: center;
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+}
+
+.moodslis{
+	overflow: hidden;
+}
+
+.moodslis img{
+	width: 100px;
+	height: 100px;
+	
+}
+.moodslis a{
+	display: inline-block;
+	
+}
+.moodslis li{
+	position: relative;
+    height: 102px;
+    padding: 7px 0;
+    border-top: 1px dashed #c8c8c8;
+    display: flex;
+	
+}
+.moodslis  i{
+	background-position: -350px 0;
+	position: absolute;
+    left: 0;
+    top: 7px;
+    display: inline-block;
+    width: 22px;
+    height: 29px;
+    line-height: 26px;
+    background-image: url(../image/import_icon.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+} 
+.moodslis .moo{
+	border: none;
+}  
+  
+.moodRight{
+	align-self: center;
+	margin-left: 20px;
+	
+}
+.moodRight a{
+	display: inline-block;
+	width: 160px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #666666;
+}
+.moodRight b{
+	display: block;
+	height: 40px;
+    font-weight: bold;
+    line-height: 40px;
+    font-size: 14px;
+    color: #fc6000;
+}
+.moodRight span{
+	height: 40px;
+    font-weight: bold;
+    line-height: 40px;
+    font-size: 14px;
+    color: #fc6000;
+}
+
+
+.hostbottom{
+	margin-top: -22px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #c8c8c8;
+    border-top: none;
+    background: #fffafa;
+}
+.pageup{
+	background-position: -404px 0;
+	display: inline-block;
+    margin-top: 5px;
+    width: 29px;
+    height: 29px;
+    background-image: url(../image/import_icon.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+}
+.pagedown{
+	background-position: -436px 0;
+    margin-left: 14px;
+    display: inline-block;
+    margin-top: 5px;
+    width: 29px;
+    height: 29px;
+    background-image: url(../image/import_icon.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+/*大牌特惠*/
+.pro-content{
+	margin: 0 auto;
+	padding-top:10px;
+	overflow: hidden;
+	clear: both;
+}
+.titbox{
+    border-bottom:3px solid #000;
+}
+.titbox h3{
+	width: 246px;
+    background-position: -80px -82px;
+    background-image: url(../image/import_icon.png);
+    background-repeat: no-repeat;
+    height: 41px;
+}
+.hangtag{
+	margin-top: 13px;
+    width: 1228px;
+    display: flex;
+    flex-flow: wrap;
+}   
+
+.hangtags{
+	margin-right: 28px;
+    margin-bottom: 20px;
+    width: 583px;
+    height: 290px;
+    border: 1px solid #C8c8c8;
+    display: flex;
+    
+}
+.hangtags a{
+	display: inline-block;
+}
+
+.hangtags span{
+	display: inline-block;
+}
+
+.hangtagLeft{
+	position: relative;
+}
+.hangposi{
+	position: absolute;
+    left: 9px;
+    top: 0;
+    width: 62px;
+    height: 53px;
+    text-align: center;
+    line-height: 46px;
+    color: #fff;
+    background: url(../image/import_icon.png) no-repeat -424px -36px;
+}
+.hangtagRight{
+	width: 236px;
+	height: 262px;
+	display: flex;
+	flex-flow: wrap;
+	margin-left: 12px;
+}
+.lafei-1{
+	margin-top: 37px;
+    font-size: 24px;
+    color: #000;
+    font-weight: 700;
+}
+.lafei-2{
+	height: 36px;
+	color: #333;
+    font-size: 13px;
+    line-height: 35px;
+    border-bottom: 1px solid #d2d2d2;
+}
+.lafei-3{
+	width: 236px;
+    font-size: 15px;
+    height: 56px;
+}
+.lafei-4{
+	display: block;
+    margin-top: 20px;
+    font-size: 34px;
+    color: #f00;
+}
+.lafei-4 strong{
+	font-family: "Arial";
+    font-size: 40px;
+    font-weight: bold;
+    color: #f00;
+}
+.lafei-5 a{
+	color: #fff;
+    width: 118px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    background: #f00;
+    margin-right: 5px;
+}
+.lafei-5 span{
+	font-size: 14px;
+	color: #666666;
+	text-decoration: line-through;
+}
+
+.lafei-5 span b{
+    font-weight: bold;
+    line-height: 40px;
+    font-size: 14px;
+    color: #fc6000;
+} 
+
+/*内容图片*/
+.banner-content{
+	background: #ff384f;
+    width: 100%;
+    text-align: center;
+}
+
+
+.bannImg{
+	width: 1200px;
+    margin: 0 auto;
+    transition: all 0.3s linear 0s;
+    position: relative;
+    text-align: center;
+}
+/*关于我们:AboutUs*/
+.AboutUs{
+	width:100%;
+	height: 343px;
+	margin: 0 auto;
+	background: url(../img/footer_Bg.gif);
+}
+.AboutImg{
+	width: 1150px;
+	height: 112px;
+	margin: 0 auto;
+	padding-top:12px ;
+	border-bottom: 2px solid grey;
+}
+.Aboutphone{
+	width: 301px;
+	height: 75px;
+	float: left;
+	margin: 18px;
+}
+
+.Aboutweixin{
+	width: 176px;
+	height: 32px;
+	float: left;
+	margin: 48px;
+}
+.Aboutsite{
+	width: 317px;
+	height: 104px;
+	float:right;
+}
+.Aboutsite p{
+	float:left;
+	text-align: right;
+	width:210px;
+	color: white;
+	font-size: 14px;
+	margin:14px 0;
+}
+.Aboutsite img{
+	display:block;
+	width: 104px;
+	height: 104px;
+	float:right;
+}
+.About{
+	width: 1150px;
+	margin: 0 auto;
+	margin-top:40px ;
+}
+.About dl{
+	width: 170px;
+	height: 125px;
+	float: left;
+}
+.About dl:nth-of-type(1){
+	margin-left: 100px;
+}
+.About dl dt b{
+	color:white;
+	line-height:40px;
+}
+
+.About dl dd a{
+	color: #a9a9a9;
+	line-height: 24px;
+	font-size:13px;
+}
+.About dl dd .hezuo{
+	color: yellow;
+}	
+/*关于我们:AboutUs*/
+
+/*版权copyRight*/
+.copyRight{
+	width: 1200px;
+	height: 204px;
+	margin: 0 auto;
+}
+.copyImg{
+	margin: 0 58px 0;
+}
+.copy{
+	width: 1200px;
+	margin: 0 auto;
+	float: left;
+	height: 32px;
+	overflow: hidden;
+}
+.copy li{
+	height: 32px;
+	width: 1200px;
+	margin: 0 auto;
+	line-height:32px;
+	text-align: center;	
+}
+
+
+.copy li a{
+	font-size: 14px;
+	color: black;
+}
+
+.copyright{
+	width: 1200px;
+	height: 24px;
+	margin: 0 auto;
+	line-height:24px;
+	font-size:14px;
+	color:gray;
+	text-align: center;
+	float: left;
+}
+.copyRig{
+	margin: 20px 390px 0;
+}
+
+/*版权copyRight*/

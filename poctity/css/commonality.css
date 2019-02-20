@@ -1,0 +1,1130 @@
+/*初始化公共样式*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,table,th,td,img,textarea{
+		margin:0;
+		padding:0;
+		}
+body{
+	font-family:"微软雅黑" , Arial;
+	}
+h1,h2,h3,h4,h5,h6{
+	font-size:12px;
+	font-weight:normal;
+}
+
+ul,ol,li{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+img{
+	border: none;
+}
+
+/*初始化公共样式*/	
+/*导航*/
+/*子导航:subNav*/
+.subNav{
+	width: 1343px;
+	height: 32px;
+	background:#3E3A39;
+	margin: 0 auto;
+}
+.subNa{
+	width: 1200px;
+	height: 32px;
+	margin: 0 auto;
+	display: flex;
+	justify-content:space-between;
+}
+.subNavleft{
+	width:120px;
+	height: 30px;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-around;
+}
+.sulefticon{
+	display: inline-block;
+}
+.sulefticon img{
+	width:12px;
+	height:12px;
+	margin: 8px 0 ;
+}
+.subNavleft span{
+	color: #ccc;
+	text-indent:5px;
+	font-size: 13px;
+	line-height: 30px;
+}
+.subNavleft b{
+	padding:2px 0;
+	color: #ccc;
+	font-size:12px;
+	line-height: 30px;
+}
+.subNavright{
+	width: 840px;
+	height: 32px;
+	display: flex;
+	justify-content: space-around;
+}
+.subNavright li a{
+	line-height: 32px;
+	color: #ccc;
+	font-size: 13px;
+}
+.subNavright li .rit{
+	color:yellow;
+	margin-left:10px;
+}
+.subNavright span{
+	line-height:32px;
+	color: #ccc;
+}
+.subNavright b{
+	font-size: 20px;
+}
+.Qcode{
+	position: absolute;
+	top:32px;
+	left:40px;
+	display: none;
+}
+.Qcode img{
+	width: 200px;
+	height: 200px;
+}
+
+/*广告:banner*/
+.banner{
+	display: inline-block;
+	margin:0 70px;
+	
+}
+/*搜索:search*/
+.search{
+	width: 1200px;
+	height: 110px;
+	padding:10px 0;
+	margin: 0 auto;
+	display:flex;
+	justify-content: space-between;
+}
+.searchImg{
+	align-self: center;
+}
+.searchIm{
+	align-self: center;
+}
+.searc{
+	width: 450px;
+	height: 62px;
+	align-self: center;
+}
+.searc input:nth-of-type(1){
+	width:356px;
+	height:36px;
+	float:left;
+	border-bottom-left-radius:5px;
+	border-top-left-radius:5px;
+	border: 2px solid #c40000;
+}
+.searc input:nth-of-type(2){
+	width:83px;
+	height:40px;
+	border: none;
+	color:white;
+	float:left;
+	font-size: 18px;
+	background: #c40000;
+}
+.searc_details{
+	width:450px;
+	height:20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.searc_details a{
+	color:#E17F7F;
+	font-size: 12px;
+}
+.searc_details span{
+	color:gray;
+}
+
+
+.search_car{
+	width: 141px;
+	height: 36px;
+	align-self: center;
+	background:#f9f9f9;
+	border: 1px solid #dfdfdf;
+}
+.search_car a{
+	width: 78px;
+	height: 12px;
+	position:relative;
+	color: #666;
+}
+.search_car a i{
+	display: inline-block;
+	width: 27px;
+	height: 40px;
+	background: url(../img/shopcar.png)no-repeat left center ;
+}
+.qipao{
+	position:absolute;
+	top:-40px;
+	left: 0px;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: url(../img/qipao.png);
+}
+.search_car a i+span{
+	display: inline-block;
+	width: 78px;
+	height: 12px;
+	font-size: 13px;
+	color: #666;
+	position:absolute;
+	top:-13px;
+	left:28px;
+}
+.search_car a .dayu{
+	font-size: 20px;
+	position:absolute;
+	top:-18px;
+	left:112px;
+}
+/*导航*/
+.navigation{
+	width: 1200px;
+	height: 45px;
+	margin: 0 auto;
+}
+.navlis{
+	width: 1200px;
+	height: 45px;
+	display: flex;
+	justify-content:space-between;
+}
+.navlis li{
+	line-height:45px;
+}
+.navlis li a.allClassifications{
+	background: #CC0210;
+	color:white;
+}
+.navlis li a{
+	color: #333;
+}
+.navlis li:nth-of-type(1){
+	width: 158px;
+	height: 45px;
+	text-align: center;
+	background: #CC0210;
+	font-size: 18px;
+}
+
+
+.navlis li:nth-of-type(3){
+	width: 95px;
+	height: 45px;
+	background:url(../img/hoticon.gif);
+}
+.allClassifications{
+	position: relative;
+}
+/*菜单:menu*/
+.allClass{
+	position: absolute;
+	top:290px;
+	left:75px;
+	z-index: 200;
+}
+.navlis .allClass li{
+	width: 158px;
+    height: 47px;
+    background: rgba(204,2,16,.9);
+}
+.navlis .allClass li a{
+	display:flex;
+    justify-content: space-around;  
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+	position:relative;
+	
+}
+.navlis .allClass li i{
+	display: inline-block;
+	align-self:center;
+	
+}
+.navlis .allClass li span{
+	color: rgba(255,255,255,.3);
+	 font-size: 20px;
+}
+/*子菜单:subMenu*/
+.navlis .allClass li .allClassifright{
+	width:1042px;
+	height: 469px;
+	border-top:1px solid #E5E5E5 ;
+	position: absolute;
+	top:0px;
+	left:158px;
+}
+/*三级菜单*/
+/*一键选择*/
+.keychoose{
+	z-index: 100;
+	display: none;	
+}
+
+.keychooseLeft{
+	width: 730px;
+	height: 425px;
+	float: left;
+}
+.keychooseLeft dl dd {
+	float: left;
+	margin:5px;
+	color:gray;
+}
+
+.keychooseLeft dt{
+	line-height: 32px;
+	text-align:left;
+	border-bottom: 1px solid gainsboro;
+}
+.chooseLeftone{
+	width: 580px;
+	height: 120px;
+	margin: 0 auto;
+	font-size: 14px;
+	margin-left: 40px;
+}
+.chooseLefttwo{
+	width: 670px;
+	height: 120px;
+	float: left;
+	font-size: 14px;
+	margin-left: 40px;
+}
+
+.juhui{
+	width: 290px;
+	height: 120px;
+	float:left ;
+}
+.mingzhu{
+	width: 290px;
+	height: 120px;
+	float: left;
+	margin-left: 60px;
+}
+.chooseLeftthree{
+	width: 290px;
+	height: 90px;
+	float: left;
+	font-size: 14px;
+	margin-left: 40px;
+	margin-top:20px;
+	color: black;
+}
+.keychooseRight{
+	width:312px;
+	height: 470px;
+	float: left;
+	background:#EAEAEA;
+	
+}
+.chooseRighImg{
+	float: left;
+	margin: 30px 34px 0;
+	
+}
+.chooseRighImg img{
+	width: 80px;
+	height: 80px;
+	float: left;
+	border-bottom: 1px solid gainsboro;
+	border-left: 1px solid gainsboro;
+}
+
+/*白酒三级菜单*/
+.bajiu{
+	display: none;
+	z-index: 100;
+}
+
+.liqueurLeft{
+	width: 730px;
+	height: 425px;
+	float: left;
+}
+.liqueurLeft dl dd {
+	float: left;
+	margin:5px;
+	color:gray;
+}
+
+.liqueurLeft dt{
+	line-height: 32px;
+	text-align:left;
+	border-bottom: 1px solid gainsboro;
+}
+.liqueurone{
+	width: 580px;
+	height: 120px;
+	margin: 0 auto;
+	font-size: 14px;
+	margin-left: 40px;
+}
+.liqueurtwo{
+	width: 670px;
+	height: 120px;
+	float: left;
+	font-size: 14px;
+	margin-left: 40px;
+}
+
+.Scent{
+	width: 290px;
+	height: 120px;
+	float:left ;
+}
+.spread{
+	width: 290px;
+	height: 120px;
+	float: left;
+	margin-left: 60px;
+}
+.liqueurthree{
+	width:670px;
+	height: 90px;
+	float: left;
+	font-size: 14px;
+	margin-left: 40px;
+	margin-top:20px;
+	color: black;
+}
+.liqueurRinght{
+	width:312px;
+	height: 470px;
+	float: left;
+	background:#EAEAEA;
+	
+}
+.liqueurRighImg{
+	float: left;
+	margin: 30px 34px 0;
+	
+}
+.liqueurRighImg img{
+	width: 80px;
+	height: 80px;
+	float: left;
+	border-bottom: 1px solid gainsboro;
+	border-left: 1px solid gainsboro;
+}
+
+/*葡萄酒*/
+.grapewine{
+	z-index:100;
+	display: none;
+}
+.grapewineLeft{
+	width: 730px;
+	height: 425px;
+	float: left;
+}
+.grapewineLeft dl dd {
+	float: left;
+	margin:2px;
+	color:gray;
+}
+
+.grapewineLeft dt{
+	line-height: 32px;
+	text-align:left;
+	border-bottom: 1px solid gainsboro;
+}
+.grapewineone{
+	width: 580px;
+	height: 120px;
+	margin: 0 auto;
+	font-size: 14px;
+	margin-left: 40px;
+}
+.grapewinetwo{
+	width: 670px;
+	height: 120px;
+	float: left;
+	font-size: 14px;
+	margin-left: 40px;
+}
+
+.category{
+	width: 290px;
+	height: 120px;
+	float:left ;
+}
+.state{
+	width: 290px;
+	height: 120px;
+	float: left;
+	margin-left: 60px;
+}
+.grapewinethree{
+	width:670px;
+	height: 90px;
+	float: left;
+	font-size: 14px;
+	margin-left: 40px;
+	margin-top:20px;
+	color: black;
+}
+.grapewinefour{
+	width: 580px;
+	margin: 0 auto;
+	font-size: 14px;
+	margin-left: 40px;
+	margin-top:20px;
+	float: left;
+}
+.grapewineRinght{
+	width:312px;
+	height: 470px;
+	float: left;
+	background:#EAEAEA;	
+}
+.grapewineRighImg{
+	float: left;
+	margin: 30px 34px 0;	
+}
+.grapewineRighImg img{
+	width: 80px;
+	height: 80px;
+	float: left;
+	border-bottom: 1px solid gainsboro;
+	border-left: 1px solid gainsboro;
+}
+
+/*洋酒三级菜单*/
+.importedwines{
+	z-index:100;
+	display: none;
+	
+}
+.importedwinesLeft{
+	width: 730px;
+	height: 425px;
+	float: left;
+}
+.importedwinesLeft dl dd {
+	float: left;
+	margin:5px;
+	color:gray;
+}
+
+.importedwinesLeft dt{
+	line-height: 32px;
+	text-align:left;
+	border-bottom: 1px solid gainsboro;
+}
+.grapewineone{
+	width: 580px;
+	height: 120px;
+	margin: 0 auto;
+	font-size: 14px;
+	float: left;
+	margin-left: 40px;
+}
+.importedwinestwo{
+	width: 670px;
+	height: 120px;
+	float: left;
+	font-size: 14px;
+	margin-left: 40px;
+}
+
+.importedwinesthree{
+	width:670px;
+	height: 90px;
+	float: left;
+	font-size: 14px;
+	margin-left: 40px;
+	margin-top:20px;
+	color: black;
+}
+
+.importedwinesRinght{
+	width:312px;
+	height: 470px;
+	float: left;
+	background:#EAEAEA;	
+}
+.importedwinesRighImg{
+	float: left;
+	margin: 30px 34px 0;	
+}
+.importedwinesRighImg img{
+	width: 80px;
+	height: 80px;
+	float: left;
+	border-bottom: 1px solid gainsboro;
+	border-left: 1px solid gainsboro;
+}
+/*黄酒三级*/
+.yellowRice{
+	z-index:100;
+	display: none;
+	
+}
+.yellowRiceLeft{
+	width: 730px;
+	height: 425px;
+	float: left;
+}
+.yellowRiceLeft dl dd {
+	float: left;
+	margin:5px;
+	color:gray;
+}
+
+.yellowRiceLeft dt{
+	line-height: 32px;
+	text-align:left;
+	border-bottom: 1px solid gainsboro;
+}
+.yellowRiceone{
+	width: 580px;
+	height: 120px;
+	margin: 0 auto;
+	font-size: 14px;
+	float: left;
+	margin-left: 40px;
+}
+.yellowRicetwo{
+	width: 670px;
+	height: 120px;
+	float: left;
+	font-size: 14px;
+	margin-left: 40px;
+}
+
+.yellowRiceRinght{
+	width:312px;
+	height: 470px;
+	float: left;
+	background:#EAEAEA;	
+}
+.yellowRiceRighImg{
+	float: left;
+	margin: 30px 34px 0;	
+}
+.yellowRiceRighImg img{
+	width: 80px;
+	height: 80px;
+	float: left;
+	border-bottom: 1px solid gainsboro;
+	border-left: 1px solid gainsboro;
+}
+/*清酒三级*/
+.sake{
+	z-index:100;
+	display: none;
+	
+}
+.sakeLeft{
+	width: 730px;
+	height: 425px;
+	float: left;
+}
+.sakeLeft dl dd {
+	float: left;
+	margin:5px;
+	color:gray;
+}
+
+.sakeLeft dt{
+	line-height: 32px;
+	text-align:left;
+	border-bottom: 1px solid gainsboro;
+}
+.sakeone{
+	width: 580px;
+	height: 120px;
+	margin: 0 auto;
+	font-size: 14px;
+	float: left;
+	margin-left: 40px;
+}
+.saketwo{
+	width: 670px;
+	height: 120px;
+	float: left;
+	font-size: 14px;
+	margin-left: 40px;
+}
+
+.sakeRinght{
+	width:312px;
+	height: 470px;
+	float: left;
+	background:#EAEAEA;	
+}
+.sakeRinghtImg{
+	float: left;
+	margin: 30px 34px 0;	
+}
+.sakeRinghtImg img{
+	width: 80px;
+	height: 80px;
+	float: left;
+	border-bottom: 1px solid gainsboro;
+	border-left: 1px solid gainsboro;
+}
+/*啤酒三级菜单*/
+.Beer{
+	z-index:100;
+	display: none;
+	
+}
+.BeerLeft{
+	width: 730px;
+	height: 425px;
+	float: left;
+}
+.BeerLeft dl dd {
+	float: left;
+	margin:5px;
+	color:gray;
+}
+
+.BeerLeft dt{
+	line-height: 32px;
+	text-align:left;
+	border-bottom: 1px solid gainsboro;
+}
+.Beerone{
+	width: 580px;
+	height: 120px;
+	margin: 0 auto;
+	font-size: 14px;
+	float: left;
+	margin-left: 40px;
+}
+.Beertwo{
+	width: 670px;
+	height: 120px;
+	float: left;
+	font-size: 14px;
+	margin-left: 40px;
+}
+
+.BeerRinght{
+	width:312px;
+	height: 470px;
+	float: left;
+	background:#EAEAEA;	
+}
+.BeerRinghtImg{
+	float: left;
+	margin: 30px 34px 0;	
+}
+.BeerRinghtImg img{
+	width: 80px;
+	height: 80px;
+	float: left;
+	border-bottom: 1px solid gainsboro;
+	border-left: 1px solid gainsboro;
+}
+
+/*酒具周边三级菜单*/
+.cocktail{
+	z-index:100;
+	display: none;
+	
+}
+.cocktailLeft{
+	width: 730px;
+	height: 425px;
+	
+}
+.cocktailLeft dl dd {
+	float: left;
+	margin:5px;
+	color:gray;
+}
+
+.cocktailLeft dt{
+	line-height: 32px;
+	text-align:left;
+	border-bottom: 1px solid gainsboro;
+}
+.cocktailone{
+	width: 580px;
+	height: 120px;
+	margin: 0 auto;
+	font-size: 14px;
+	float: left;
+	margin-left: 40px;
+}
+.cocktailtwo{
+	width: 670px;
+	height: 120px;
+	float: left;
+	font-size: 14px;
+	margin-left: 40px;
+}
+/*三级菜单结束*/
+.nav_msg{
+	width:100%;
+	height: 45px;
+	margin: 0 auto;
+	font-size: 14px;
+	border-bottom: 1px solid gainsboro;
+}
+.nav_note{
+	width: 1200px;
+	height: 45px;
+	margin: 0 auto;
+	color: #9B9B9B;
+	font-size: 14px;
+	display: flex;
+	justify-content: space-between;
+}
+.nav_msgleft{
+	display: flex;
+	justify-content: space-between;
+	align-self: center;
+}
+.naleft{
+	margin:0 17px;
+}
+
+
+.nav_msgright{
+	align-self: center;
+}
+.nav_note img{
+	margin: -5px 0;
+}
+
+/*导航结束*/
+/*轮播图*/
+.box1{
+	width: 1200px;
+	height: 470px;
+	margin: 0 auto;
+}
+
+
+
+
+
+
+/*轮播图*/
+.box{
+	width: 1200px;
+	height: 500px;
+}
+
+
+
+
+
+/*关于我们:AboutUs*/
+.AboutUs{
+	width:100%;
+	height: 343px;
+	margin: 0 auto;
+	background: url(../img/footer_Bg.gif);
+}
+.AboutImg{
+	width: 1150px;
+	height: 112px;
+	margin: 0 auto;
+	padding-top:12px ;
+	border-bottom: 2px solid grey;
+}
+.Aboutphone{
+	width: 301px;
+	height: 75px;
+	float: left;
+	margin: 18px;
+}
+
+.Aboutweixin{
+	width: 176px;
+	height: 32px;
+	float: left;
+	margin: 48px;
+}
+.Aboutsite{
+	width: 317px;
+	height: 104px;
+	float:right;
+}
+.Aboutsite p{
+	float:left;
+	text-align: right;
+	width:210px;
+	color: white;
+	font-size: 14px;
+	margin:14px 0;
+}
+.Aboutsite img{
+	display:block;
+	width: 104px;
+	height: 104px;
+	float:right;
+}
+.About{
+	width: 1150px;
+	margin: 0 auto;
+	margin-top:40px ;
+}
+.About dl{
+	width: 170px;
+	height: 125px;
+	float: left;
+}
+.About dl:nth-of-type(1){
+	margin-left: 100px;
+}
+.About dl dt b{
+	color:white;
+	line-height:40px;
+}
+
+.About dl dd a{
+	color: #a9a9a9;
+	line-height: 24px;
+	font-size:13px;
+}
+.About dl dd .hezuo{
+	color: yellow;
+}	
+/*关于我们:AboutUs*/
+
+/*版权copyRight*/
+.copyRight{
+	width: 1200px;
+	height: 204px;
+	margin: 0 auto;
+}
+.copyImg{
+	margin: 0 58px 0;
+}
+.copy{
+	width: 1200px;
+	margin: 0 auto;
+	float: left;
+	height: 32px;
+	overflow: hidden;
+}
+.copy li{
+	height: 32px;
+	width: 1200px;
+	margin: 0 auto;
+	line-height:32px;
+	text-align: center;	
+}
+
+
+.copy li a{
+	font-size: 14px;
+	color: black;
+}
+
+.copyright{
+	width: 1200px;
+	height: 24px;
+	margin: 0 auto;
+	line-height:24px;
+	font-size:14px;
+	color:gray;
+	text-align: center;
+	float: left;
+}
+.copyRig{
+	margin: 20px 390px 0;
+}
+
+/*版权copyRight*/
+
+/*侧栏:sideBar*/
+.sideBar{
+	width:32px;
+	height:100%;
+	position:fixed;
+	top: 0;
+	right:0px;
+	background: #eaeaea;
+	
+}
+.sideBatop{
+	margin-top:120px;
+}
+.sideBatop a{
+	display: block;
+	border-bottom: 1px solid gray;
+	color: #C40000;
+	margin:15px 5px;
+	text-align: center;
+}
+.faicon{
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	margin:2px 0;
+	position: relative;
+	
+}
+.sideB{
+	width: 120px;
+	height: 40px;
+	position:absolute;
+	display: none;
+	background:black;
+	opacity: 0.8;
+	z-index: 1000;
+	text-align: center;
+	color: white;
+	line-height: 40px;
+	font-size: 13px;
+}
+.member{
+	background:url(../img/side1.png)no-repeat;
+}
+.detrim{
+	background: url(../img/side9.png)  no-repeat;
+}
+.enshri{
+	background: url(../img/sdie2.png)no-repeat;
+}
+.QuicMark{
+	background: url(../img/sdie3.png)no-repeat;
+}
+.better{
+	background: url(../img/sdie5.png)no-repeat;
+}
+.linese{
+	background: url(../img/sdie6.png) no-repeat;
+}
+
+
+.tickling{
+	margin-top:40px;
+	background: url(../img/sdie7.png)no-repeat;
+}
+
+.BackTop{
+	background: url(../img/sdie8.png)no-repeat ;
+}
+
+.QuickMark img{
+	width:150px;
+	height:150px;
+}
+.bett img{
+	width:150px;
+	height:150px;
+}
+.memberCenter{
+	top:106px;
+	left:-185px;	
+}
+.stock{
+	top:249px;
+	left:-185px;
+}
+.enshrine{
+	top:291px;
+	left:-185px;
+}
+.QuickMark{
+	position:absolute;
+	display: none;
+	z-index: 1000;
+	top:331px;
+	left:-200px;
+}
+.bett{
+	position:absolute;
+	display: none;
+	z-index: 1000;
+	top:370px;
+	left:-200px;
+}
+.lineso{
+	top:413px;
+	left:-185px;
+}
+.tick{
+	top:493px;
+	left:-185px;
+}
+.Backtop{
+	top:533px;
+	left:-185px;
+}
+/*固定头部*/
+.headlock{
+	height: 50px;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top:0px;
+	z-index: 10000;
+	background:rgba(221,39,39,.95);
+	display: none;
+}
+
+.headlockLeft{
+	display: inline-block;	
+	margin:6px 100px;
+}
+.headlockLeft img{
+	height: 40px;
+	
+	
+}
+
+
+.headlockRight{
+	position: absolute;
+	top:6px;
+	left:390px;
+}
+
+
+.headlockRight input:nth-of-type(1) {
+	width: 566px;
+	height: 33px;
+	background:white;
+	font-size: 14px;
+	color:gray;
+	text-indent:20px;
+	border: 3px solid #C40000;
+}
+
+.headlockRight input:nth-of-type(2) {
+	width:86px;
+	height:39px;
+	background: #C40000;
+	font-size: 16px;
+	cursor: pointer;
+	color: white;
+	border: none;
+}
+
+rgba(0,0,0,.11)
+

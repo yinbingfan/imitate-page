@@ -1,0 +1,417 @@
+html,body,div,p,ul,ol,li,dl,dt,dd,form,table,tr,td,th,hr,h1,h2,h3,h4,h5,h6,img,input{
+	margin: 0;
+	padding:0;
+	border: 0;
+}
+html,body{
+	height: 100%;
+}
+body{
+	font-family: "微软雅黑",Arial;
+	margin: 0 auto;
+}
+a{
+	text-decoration:none;
+}
+img{
+	border:none;
+	display: block;
+}
+ul,li{
+	list-style: none;
+}
+
+/*header*/
+.header{
+	width: 100%;
+	height: 80px;
+}
+.header .logo{
+	width: 240px;
+	height:80px ;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*banner*/
+.banner-box {
+	position: relative;
+	/*overflow: hidden;*/
+	min-height: 750px;
+	max-height: 1080px;
+    background: #f8fcff;
+    /*background: linear-gradient(to bottom, #f8fcff, #f8fcff, #f8fcff);*/
+}
+.banner-box:before {
+	position: absolute;
+	content: ' ';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(//uc-res.mzres.com/resources/uc/wlogin/member/images/banner.png) no-repeat center;
+	background-size: contain;
+}
+/*form*/
+.register_form{
+	width: 298px;
+	position: absolute;
+	right:230px ;
+	top: 106px;
+	background: #fff;
+	padding: 72px 35px 20px;
+	border-radius: 2px;
+}
+#register_form input{
+	height: 22px;
+	line-height: 22px;
+}
+.tab-title{
+	text-align: center;
+}
+.tab-title_flyme{
+	font-size:18px ;
+	color:#00a7ea;
+	transition: all .5s; 
+}
+.tab-title_flyme:hover{
+	color: #005AA0;
+}
+.tip-box{
+	width: 298px;
+	height: 33px;
+	margin-top:26px ;
+	border: solid 1px #ffc2b3;
+    background: #ffd1ca;
+    border-radius: 2px;
+    position: relative;
+}
+.tip-box .error_icon{
+	background:url(../img/error-ico.png) no-repeat left center;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+.tip-box .tip_txt{
+	color: #666;
+    font-size: 12px;
+    padding-right: 25px;
+    padding-left: 35px;
+   	vertical-align: middle;
+    /*display: table-cell;垂直居中*/
+    line-height: 33px;
+}
+.tip-box .tip_close{
+	background:url(../img/close-ico.png) no-repeat right center;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+.register_phonebox{
+	margin: 36px 0;
+	font-size: 14px;
+	height: 46px;
+	line-height: 46px;
+	border: 1px solid #DDD;
+	padding: 0 10px;
+}
+.btn_focus{
+	border: 1px solid #32A5E7;
+}
+.register_phonebox .cycode-selected{
+	display: inline-block;
+	width: 60px;
+	border-right: 1px solid #DDD;
+    cursor: pointer;
+}
+.cycode-selectbox input{
+	outline: none;
+}
+.ipt-cycode{
+	width: 60%;
+    color: grey;
+    text-align: center;
+    cursor: pointer;
+}
+.arrow-down{
+	background: url(../img/arrow-down.png) no-repeat right center;
+	display: inline-block;
+	width: 14px;
+	height: 8px;
+}
+
+.register_btn{
+	position: relative;
+    /*top: 0;*/
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    width: 294px;
+    height: 42px;
+    cursor: pointer;
+    /*opacity: 1;*/
+   overflow: hidden;
+}
+.register_btn_before{
+	width: 100%;
+	height: 100%;
+	position: relative;	
+}
+.before_btn{
+	float: left;
+	width: 32px;
+	height: 32px;
+	background: url(../img/register_btn.png) no-repeat left center;
+	margin: 5px;
+}
+.before_btn_R{
+	float: right;
+	width: 32px;
+	height: 32px;
+	margin-top: 5px;
+	background: url(../img/sprite.1.4.6.png) no-repeat 1px -99px;
+}
+.register_btn_before_txt{
+	line-height: 42px;
+    font-size: 14px;
+    color: #666;
+    white-space: nowrap;
+}
+/*
+.register_btn_ing{
+	width: 276px;
+	height: 62px;
+	border: 1px solid #ccc;
+}
+.register_btn_ing_txt{
+	display: inline-block;
+	width: 261px;
+	height: 42px;
+	margin: 10px 8px;
+	background: url(../img/sprite.1.1.2.png) no-repeat 1px 2px;
+}
+*/
+.register_btn_after{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	left: 0;
+	top: -42px;
+	/*opacity: 0;*/
+	display: none;
+	border-color: #26C267;
+	background:#eefff5;
+}
+.after_btn{
+	float: left;
+	width: 32px;
+	height: 32px;
+	background: url(../img/sprite.1.4.6.png) no-repeat 1px -156px;
+	margin: 5px;
+}
+.after_btn_R{
+	float: right;
+	width: 32px;
+	height: 32px;
+	margin-top: 5px;
+	background: url(../img/sprite.1.4.6.png) no-repeat 1px -205px;
+}
+.register_btn_after_txt{
+	line-height: 42px;
+    font-size: 14px;
+  	color: #18A452;
+    white-space: nowrap;
+}
+.rememberField{
+	font-size: 12px;
+	margin-bottom: 30px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 40px;
+}
+.rememberField_link{
+	color: #1eb9ee;
+}
+.rememberField_link:hover{
+	color: #319fc5;
+}
+.register_btn_nextstep{
+	display: block;
+	width: 297px;
+	height: 46px;
+	line-height: 46px;
+	background: #32a5e7;;
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	cursor: pointer;
+	margin-bottom: 20px;
+	border-radius: 2px;
+}
+.register_btn_nextstep:hover{
+	background: #2b8cc5;
+}
+.transferField{
+    margin-bottom: 5px;
+}
+.goregister{
+	font-size: 14px;
+    color:#00a7ea;
+}
+.goregister:hover{
+	color:#319fc5;	
+}
+
+
+/*footer*/
+.flymefooter{
+	width: 100%;
+    height: 130px;
+    /*border-top: solid 1px #E5E6E7;*/
+    background-color: #fff;
+    color: black;
+}
+.flymefooter_content{
+	width: 1000px;
+    margin: 30px auto 30px;
+    /*overflow: hidden;*/
+   display: flex;
+   flex-flow: column;
+}
+.footer-layer{
+	margin-bottom: 20px;
+}
+.footer-layer_innerlink{
+	float: left;
+}
+.footer-layer_innerlink li{
+	float: left;
+	font-size: 14px;
+	padding: 11px;
+	background: url(../img/base.png) no-repeat 24px -147px;
+}
+.footer-layer_innerlink li a{
+	color: #000000;
+}
+.footer-layer_innerlink li a:hover{
+	color: #C0C0C0;
+}
+.footer-layer_innerlink .footer-innerLink_language_btn{
+	position: relative;
+	background: url(../img/base.png) no-repeat -70px -138px;
+}
+.footer-innerLink_language{
+	position: absolute;
+	left: 0;
+	top: -30px;
+	display: block;
+	width: 76px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	border:1px solid  #E5E6E7;
+	display: none;
+	transition: all .5s;
+} 
+.footer-innerLink_language_btn:hover .footer-innerLink_language{
+	display: block;
+}
+.footer-layer_services{
+	float: left;
+    margin-left: 36px;
+    font-size: 14px;
+    line-height: 41px;
+}
+.service-label{
+	margin-right: 10px;
+}
+.service-tel{
+	margin-right: 20px;
+}
+.service-online{
+	display: inline-block;
+	width: 66px;
+	height: 20px;
+	line-height: 20px;
+	background:#32a5e7;
+	color: #fff;
+	border-radius: 2px;
+    text-align: center;
+}
+.service-online:hover{
+	background: #00C3F5;
+}
+.footer-layer_outerlink{
+	position: relative;
+    float: right;
+    padding-top:3px;
+}
+.footer-layer_outerlink a{
+	margin-left: 10px;
+    display: inline-block;
+    /*overflow: hidden;*/
+    width: 33px;
+    height: 33px;
+}
+.footer-layer_outerlink .icon{
+	display: inline-block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+	background: url(../img/base.png) no-repeat;
+}
+.outerlink_sina .icon{
+	background-position: -218px -91px;
+}
+.outerlink_sina:hover .icon{
+	background-position: -218px -137px;
+}
+.outerlink_wechat .icon{
+	background-position: -301px -91px;
+}
+.outerlink_wechat:hover .icon{
+	background-position: -301px -137px;
+}
+.outerlink_wechat_pic{
+	position: absolute;
+    left: -80px;
+    top: -264px;
+	width: 270px;
+	height: 270px;
+	background: url(../img/weixin.png) no-repeat;
+	z-index: 10000;
+	display: none;
+}
+.outerlink_wechat i:hover .outerlink_wechat_pic{
+	
+}
+.outerlink_qzone .icon{
+	background-position: -343px -91px;
+}
+.outerlink_qzone:hover .icon{
+	background-position: -343px -137px;
+}
+
+.flymeCopyright{
+	font-size: 12px;
+	color: #a8a8a8;
+}
+.layout-footer-copyright_txt{
+	float: left;
+}
+.layout-footer-copyright_link{
+	float: left;
+	margin-left:6px ;
+	color: #a8a8a8;
+}
+.layout-footer-copyright_link:hover{
+	color: gray;
+}
+

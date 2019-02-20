@@ -1,0 +1,484 @@
+html,body,div,p,ul,ol,li,dl,dt,dd,form,table,tr,td,th,hr,h1,h2,h3,h4,h5,h6,img,input{
+    margin: 0;
+    padding:0;
+}
+html,body{
+    height: 100%;
+    background: #f5f5f5;
+}
+html{
+    font-size: 26.67vw;/*100px*/
+}
+body{
+    font-family: "微软雅黑",Arial;
+}
+a{
+    text-decoration:none;
+}
+img{
+    border:none;
+    display: block;
+}
+ul,li{
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+}
+*{
+    box-sizing: border-box;
+}
+i{
+    font-style: normal;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-container img{
+    width: 100%;
+    height: 100%;
+}
+
+/*header*/
+header{
+    width: 100%;
+    height: 0.46rem;
+    background: linear-gradient(90deg,#0af,#0085ff);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top:0;
+    z-index: 9;
+}
+header .header_back{
+    width: 0.4rem;
+    height: 0.37rem;
+    margin-right: 1rem;
+}
+header .header_title{
+    font-size: 0.16rem;
+    color: #ffffff;
+    font-weight: 600;
+ }
+
+/*address*/
+.address{
+    width: 100%;
+    background: linear-gradient(90deg,#0af,#0085ff);
+    color: #ffffff;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.02rem 0 0.1rem;
+    position: relative;
+    margin-bottom: 0.1rem;
+    margin-top: 0.46rem;
+}
+.address_container{
+    margin-bottom: 0.08rem;
+    display: flex;
+    margin-top: 0.12rem;
+}
+.address_detail{
+    margin-right: 0.1rem;
+}
+.address_detail,.address_enter{
+    font-size: 0.16rem;
+}
+.address .info{
+    font-size: 0.14rem;
+
+}
+
+
+/*sendTime*/
+section{
+    width: 100%;
+    background: #ffffff;
+    padding: 0.1rem;
+    margin-bottom: 0.1rem;
+}
+.sendTime_show{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.1rem;
+}
+.sendTime_show .enter{
+    width: 0.18rem;
+    height: 0.44rem;
+}
+.sendTime_show .enter img{
+    width: 100%;
+    height: 100%;
+}
+.sendTime_top{
+    display: flex;
+    font-size: 0.16rem;
+    margin-bottom: 0.07rem;
+}
+.sendTime_top span{
+    margin-right: 0.1rem;
+}
+.sendTime_bottom{
+    font-size: 0.07rem;
+    display: flex;
+}
+.sendTime_bottom span{
+    padding: 0 0.01rem;
+    margin-right: 0.05rem;
+}
+.sendTime_bottom .deliveryWrap{
+    color: #ffffff;
+    background: #00a1ff;
+    line-height: 0.14rem;
+}
+.sendTime_bottom .punctuality{
+    border:1px solid #00a1ff;
+    color: #00a1ff;
+    line-height: 0.08rem;
+    padding: 0.01rem;
+}
+.sendTime_bottom p{
+    color: #00a1ff;
+    font-size: 0.07rem;
+    line-height: 0.14rem;
+}
+
+/*sendTime_select*/
+.sendTime_select{
+    font-size: 0.12rem;
+    background: #f4f4f4;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    display: none;
+}
+.sendTime_select .sendTime_select_header{
+    font-size: 0.16rem;
+    text-align: center;
+    padding: 0.05rem;
+}
+.sendTime_select_container{
+    display: flex;
+
+}
+.sendTime_select_container .Time_tab{
+    width:1.04rem;
+}
+.sendTime_select_container .Time_tab span{
+    display:  block;
+    width: 100%;
+    text-align: center;
+}
+.sendTime_select_container .Time_tab span,.sendTime_select_container .Time_list{
+    background: #ffffff;
+    padding: 0.07rem;
+}
+.sendTime_select_container .Time_list{
+    flex: 1;
+    padding: 0rem;
+}
+.sendTime_select_container .Time_list li{
+    padding: 0.07rem;
+    padding: 0.07rem 0.12rem;
+    /*display: flex;*/
+    overflow: hidden;
+}
+.sendTime_select_container .Time_list li span:nth-child(1){
+    /*margin-right: 0.2rem;*/
+    float: left;
+}
+.sendTime_select_container .Time_list li .sendPrice{
+    color: #919191;
+    margin-left: 0.1rem;
+    float: left;
+}
+.sendTime_select_container .Time_list li .selectedBtn{
+    width: 0.15rem;
+    height: 0.15rem;
+    float: right;
+}
+.sendTime_select_container .Time_list li .selectedBtn img{
+    width: 100%;
+    height:100%;
+}
+
+/*goodsDetail*/
+.goods_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.05rem;
+}
+.goods_header>img{
+    width: 0.3rem;
+    height: 0.3rem;
+}
+.goods_header::before{
+    content: "";
+    width: 16%;
+    height: 0.01rem;
+    background: #cccccc;
+    margin-right: 0.1rem;
+}
+.goods_header::after{
+    content: "";
+    width: 16%;
+    height: 0.01rem;
+    background: #cccccc;
+    margin-left: 0.1rem;
+}
+.goods_header h3{
+    font-size: 0.16rem;
+    font-weight: 600;
+}
+.goodsMune_item{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.1rem 0;
+    /*border-bottom: 1px dotted #ccc;*/
+}
+.goodsMune{
+    font-size: 0.15rem;
+}
+.goodsMune_item .goodsNum{
+    margin-left: 0.45rem;
+}
+.goodsMune_item .info{
+    color:#818181;
+    font-size: 0.12rem;
+ }
+.judgeDiscounts{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+.redPacket_info{
+    font-size: 0.12rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dotted #cccccc;
+    padding-bottom: 0.05rem;
+}
+.redPacket_info_result{
+    color: #818181;
+    display: flex;
+    align-items: center;
+}
+.discounts_info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.discounts_info_txt{
+    color: #818181;
+    font-size: 0.07rem;
+}
+.totalPrice{
+    font-size: 0.18rem;
+    font-weight: 600;
+}
+.goodsMune_item.info{
+    /*padding: 0;*/
+}
+.discountsPrice_info{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.12rem;
+    padding: 0.1rem 0;
+}
+.discountsPrice_info_txt{
+    color: #818181;
+}
+.discountsPrice_info_txt .label{
+    padding: 0 0.01rem;
+    color: #ffffff;
+    background: rgb(240, 115, 115);
+    border-radius: 0.03rem;
+}
+.discounts_price{
+    color: #ff4a07;
+}
+
+
+/*支付方式及相关*/
+.payRelated{
+    font-size: 0.15rem;
+    margin-bottom: 0.5rem;
+}
+.payRelated_item{
+     padding:0.1rem 0;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     border-bottom: 1px solid #eee;
+}
+.payRelated_item .environment{
+    display: flex;
+    align-items: center;
+}
+.payRelated_item .environment .environmentLogo{
+    width: 0.18rem;
+    height: 0.18rem;
+}
+.payRelated input{
+    display: inline-block;
+    width: 0.19rem;
+    height: 0.19rem;
+    border:1px solid #cccccc;
+    border-radius: 0.03rem;
+    outline:none;
+    -webkit-appearance: none;
+}
+.checkBoxClass:checked{
+    border-color: #4adb64;
+    background: #ffffff url("../images/img_yxz/check.png") no-repeat center;
+    background-size: cover;
+}
+
+/*订单备注*/
+.tasteCheck{
+    font-size: 0.07rem;
+    background: #f4f4f4;
+    width: 100%;
+    z-index: 9;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 0.2rem;
+    display: none;
+}
+.tasteCheck span{
+    background: #ffffff;
+}
+.tasteCheck_header{
+    font-size: 0.16rem;
+    text-align: center;
+    padding: 0.15rem 0 0.05rem;
+}
+.tasteCheck_container .taste{
+    padding: 0 0.1rem;
+    margin-bottom: 0.2rem;
+}
+.tasteCheck_container_item{
+
+}
+.tasteCheck_uls{
+    display: flex;
+    margin-bottom: 0.1rem;
+}
+.tasteCheck_uls li{
+    border: 1px solid #cccccc;
+}
+.tasteCheck_uls li span{
+    display: inline-block;
+    color: #333;
+    /* padding: 1rem 0.05rem; */
+    padding: 0.03rem;
+}
+.tasteCheck_uls li span.active{
+    color: #ffffff;
+    background: linear-gradient(90deg,#0af,#0085ff);
+}
+.tasteCheck_uls .poison{
+     margin-right: 0.1rem;
+ }
+.payRelated .tasteCheck input{
+    border: 1px solid #eeeeee;
+    color: #818181;
+    font-size: 0.07rem;
+    outline: none;
+    width: 100%;
+    height: 1rem;
+    padding-left: 0.1rem;
+}
+.noPlate{
+    display: inline-block;
+    color: #333;
+
+    margin-right: 0.1rem;
+}
+.noPlate span{
+    display: inline-block;
+    padding: 0.03rem;
+}
+.plateNum{
+    padding: 0 0.1rem;
+}
+.txtHeader{
+    margin-bottom: 0.1rem;
+}
+.plateNum_uls{
+    display: flex;
+    align-items: center;
+}
+.plateNum_uls li{
+    border: 1px solid #cccccc
+ }
+.plateNum_uls .checkNum span{
+    display: inline-block;
+    color: #333;
+    padding: 0.03rem;
+}
+.plateNum_uls li span.active{
+    color: #ffffff;
+    background: linear-gradient(90deg,#0af,#0085ff);
+    background-clip: padding-box;
+}
+.plateNum_uls li{
+    border: 1px solid #cccccc0
+}
+.tasteBtn{
+    width: 88%;
+    margin: 0.2rem auto;
+    margin-bottom: 0;
+    color: #ffffff;
+    background: linear-gradient(90deg,#4adb64,#42bb58);
+    height: 0.35rem;
+    border-radius: 0.03rem;
+    font-size: 0.14rem;
+    line-height: 0.35rem;
+    text-align: center;
+}
+
+/*footer*/
+footer{
+    width: 100%;
+    height: 0.45rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+}
+.footer_totalPrice{
+    color: #ffffff;
+    font-size: 0.16rem;
+    flex:1;
+    display: flex;
+    background: rgba(61,61,61,1);
+    align-items: center;
+    height: 0.45rem;
+}
+.discountsPrice{
+    color: #bbbbbb;
+    font-size: 0.12rem;
+}
+.payPrice{
+    font-weight: 600;
+    margin: 0 0.05rem;
+}
+.footer_payBtn{
+    font-size: 0.16rem;
+    background: rgba(0,215,98,1);
+    /*height: 100%;*/
+    width: 22%;
+    text-align: center;
+    line-height: 0.45rem;
+    color: #ffffff;
+}

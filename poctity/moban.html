@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/moban.css"/>
+<title></title>
+</head>
+<body>
+</body>
+	<!--轮播图-->
+<div class="slideshow">
+	<div id="slideshow-Img">
+		<img class="slideshowImg" src="img/166293ccdf334ab18e0703ac19029be7.jpg"/>
+		<img class="slideshowImg" src="img/0badaa1571df4a18864750b741a49335.jpg"/>
+		<img class="slideshowImg" src="img/4cc68ad268c641fcb9d6e61f3e2ee4cf.jpg"/>	
+		<img class="slideshowImg" src="img/4d4e5627f2714c2dbedcf614f615449c.jpg"/>
+		<img class="slideshowImg" src="img/6bc0999212214d4e998884b9cbfaf9cb.jpg"/>
+		<img class="slideshowImg" src="img/b699b557ca9b4d91bb4390f07faf4fe8.jpg"/>	
+	</div>
+	<ul id="pagination">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+		<li>6</li>
+	</ul>		
+</div>	
+<!--轮播图-->
+</html>
+<script type="text/javascript" src="js/slideShow.js" ></script>
+<script type="text/javascript">
+window.onload = function(){
+	var lis = $I("pagination").children;
+	lis[0].style.backgroundColor="#ccc";
+	startChange();
+	$I("slideshow-Img").onmouseover = stopChange;
+	$I("slideshow-Img").onmouseout = startChange;
+	for(var i=0;i<lis.length;i++){
+		lis[i].onclick = function(){
+			goImg(i+1);
+		}
+	}
+	
+	
+}	
+	
+	
+</script>

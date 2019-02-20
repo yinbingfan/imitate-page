@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>购物车-我的购物车</title>
+	<link href="//store.res.meizu.com/layout/img/favicon-2e71785f44.ico" rel="shortcut icon" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/shoppingCar.css"/>
+	<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+</head>
+<body>
+<!-- header -->
+	<div class="header">
+		<div class="header_content">
+			<div class="header_logo">
+				<a href="MZindex.html"><img src="img/logo.png"/></a>
+			</div>
+			<ul class="header_titlelist">
+				<li class="header_titlelist_block active">购物车</li>
+				<li class="header_titlelist_block">>&nbsp;&nbsp;确认订单&nbsp;&nbsp;></li>
+				<li class="header_titlelist_block">在线支付&nbsp;&nbsp;></li>
+				<li class="header_titlelist_block">完成</li>
+			</ul>
+			<ul class="header_rightlist">
+				<li class="header_rightlist_item">
+					<a class="header_right_link" href="#">我的订单</a>
+				</li>
+				<li class="header_member signin">
+					<a class="header_member_link" href="#">
+						<span class="header_member_link_username">Sunny楊的商城</span>
+						<i class="header-member-triangle"></i>
+					</a>
+					<ul class="header_member_downmune">
+						<li class="header_member_downmune_item">
+							<a class="header_member_downmune_link" href="#">地址管理</a>
+						</li>
+						<li class="header_member_downmune_item">
+							<a class="header_member_downmune_link" href="#">我的收藏</a>
+						</li>
+						<li class="header_member_downmune_item">
+							<a class="header_member_downmune_link" href="#">我的回购券</a>
+						</li>
+						<li class="header_member_downmune_item">
+							<a class="header_member_downmune_link" href="#">问题反馈</a>
+						</li>
+						<li class="header_member_downmune_item exit">
+							<a class="header_member_downmune_link exit" href="#">退出</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>	
+	</div>
+
+<!--section_cart-->
+	<div class="cart" id="cart">
+		<div class="cart_content">
+			<table class="cart_header">
+				<tr>
+					<td class="cart-col-select">
+						<div class="cart_select">
+							<input type="checkbox" name="choose" id="checkAll" value="checkAll"/>
+							<label for="checkAll" class="cart_select_txt">全选</label>
+						</div>
+					</td>
+					<td class="cart-col-name">商品</td>
+					<td class="cart-col-price">单价(元)</td>
+					<td class="cart-col-num">数量</td>
+					<td class="cart-col-total"  style="color: #333;font-size:14px;font-weight: normal">小计(元)</td>
+					<td class="cart-col-ctrl">操作</td>
+				</tr>
+			</table>
+			<ul class="cart_goodslist" id="cart_goodsList">
+				<li class="cart_goodslist_item">
+					<div class="cart_goodslist_item_header">
+						<input type="checkbox" name="choose" id="companyCheckone" value="companyCheckone"/>
+						<label for="companyCheckone" class="cart_goodslist_item_header_txt">深圳雷柏科技股份有限公司</label>
+					</div>
+					<table class="cart_goodslist_item_body" cellpadding="0" cellspacing="0">
+						<tr class="cart_product">
+							<td class="cart-col-select">
+								<div class="cart_select">
+									<input type="checkbox" name="choose" id="productCheckone" value="productCheckone"/>
+									<label for="productCheckone" class="cart-product-link">
+										<a href="#"><img src="img/CnQOjVh10gOACLP-AALAW_COLNA801.png@120x120.png"/></a>
+									</label>
+								</div>
+							</td>
+							<td class="cart-col-name">
+								<a class="cart-product-link" href="#">
+									<p>雷柏无线超薄键鼠套装9060</p>
+									<span class="cart_product_color">白色</span>
+								</a>
+							</td>
+							<td class="cart-col-price">
+								<span>￥</span>
+								<span class="cart-product">169.00</span>
+							</td>
+							<td class="cart-col-num">
+								<div class="cart-col-num_calculate">
+									<input class="cart-subtract" type="button" id="" value="-" />
+									<div class="cart-product-num">
+										<input class="cart-product-num-result" type="text" id="" value="1" />
+									</div>
+									<input class="cart-add" type="button" id="" value="+" />
+								</div>
+							</td>
+							<td class="cart-col-total">
+								<span>￥</span>
+								<span class="cart-product-price total">0.00</span>
+							</td>
+							<td class="cart-col-ctrl">
+								<span class="cart-product-remove"> × </span>
+							</td>
+						</tr>
+					</table>
+				</li>
+				<li class="cart_goodslist_item">
+					<div class="cart_goodslist_item_header">
+						<input type="checkbox" name="choose" id="companyChecktwo" value="companyChecktwo"/>
+						<label for="companyChecktwo" class="cart_goodslist_item_header_txt">北京百华泰和贸易有限公司</label>
+					</div>
+					<table class="cart_goodslist_item_body" cellpadding="0" cellspacing="0">
+						<tr class="cart_product">
+							<td class="cart-col-select">
+								<div class="cart_select">
+									<input type="checkbox" name="choose" id="productChecktwo" value="productCheckone"/>
+									<label for="productChecktwo" class="cart-product-link">
+										<a href="#"><img src="img/Cix_s1gtYiSAHltbAAFXcKkdwdg502.png@120x120.png"/></a>
+									</label>
+								</div>
+							</td>
+							<td class="cart-col-name">
+								<a class="cart-product-link" href="#">
+									<p>先锋SEC-E521BT入耳式蓝牙运动线控耳机</p>
+									<span class="cart_product_color">红色</span>
+								</a>
+							</td>
+							<td class="cart-col-price">
+								<span>￥</span>
+								<span class="cart-product">499.00</span>
+							</td>
+							<td class="cart-col-num">
+								<div class="cart-col-num_calculate">
+									<input class="cart-subtract" type="button" id="" value="-" />
+									<div class="cart-product-num">
+										<input class="cart-product-num-result" type="text" id="" value="1" />
+									</div>
+									<input class="cart-add" type="button" id="" value="+" />
+								</div>
+							</td>
+							<td class="cart-col-total">
+								<span>￥</span>
+								<span class="cart-product-price total">0.00</span>
+							</td>
+							<td class="cart-col-ctrl">
+								<span class="cart-product-remove"> × </span>
+							</td>
+						</tr>
+					</table>
+				</li>
+			</ul>
+		</div>
+		<div class="cart_footer">
+			<div class="cart_footer_content">
+				<div class="cart_footer_left">
+					<div class="cart_select total">
+						<input type="checkbox" name="choose" id="checkAlltotal" value="checkAlltotal"/>
+						<label for="checkAlltotal" class="cart_select_total">全选</label>
+					</div>
+					<span class="cart_removeselect_total">删除选中的商品</span>
+					<div class="cart-footer-count">
+						共<span class="cart-footer-num" id="totalCount">2</span>件商品，已选择
+						<span class="cart-footer-num blue" id="totalSelectedCount">1</span>件
+					</div>
+				</div>
+				<div class="cart_footer_right">
+					<div class="cart-footer-sum">
+						已优惠<span class="cart-footer-num" id="totalDiscount">0.00</span>元，
+						合计(不含运费)：<span class="sign">￥</span><span class="cart-footer-total" id="totalPrice">668.0</span>
+					</div>
+					<div class="cart_footer_submitbtn" id="cartSubmit">去结算</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!--footer-->
+<div class="layout-footer">
+	<div class="layout-footer-content">
+		<div class="layout-footer-top">
+			<ul class="layout-footer-services">
+				<li>
+					<a href="#" class="layout-footer-services-link">
+						<i class="icon iconfont icon-iconshunfengbaoyou"></i>
+						<span class="ayout-footer-services-txt">顺丰包邮</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="layout-footer-services-link">
+						<i class="icon iconfont icon-flash_auto"></i>
+						<span class="ayout-footer-services-txt">100+城市次日送达</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="layout-footer-services-link">
+						<i class="icon iconfont icon-return"></i>
+						<span class="ayout-footer-services-txt">7天无理由退换货</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="layout-footer-services-link">
+						<i class="icon iconfont icon-xunhuan"></i>
+						<span class="ayout-footer-services-txt">15天换货保障</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="layout-footer-services-link">
+						 <i class="icon iconfont icon-gongju"></i>
+						<span class="ayout-footer-services-txt">1年免费保修</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="layout-footer-services-link">
+						 <i class="icon iconfont icon-dingwei"></i>
+						<span class="ayout-footer-services-txt">2300+线下体验店</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="layout-footer-services-link">
+						 <i class="icon iconfont icon-diannao"></i>
+						<span class="ayout-footer-services-txt">远程支持服务</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="layout-footer-services-link">
+						 <i class="icon iconfont icon-home"></i>
+						<span class="ayout-footer-services-txt">上门快修</span>
+					</a>
+				</li>
+			</ul>
+			<div class="layout-footer-contact">
+				<p>24小时全国服务热线</p>
+				<a href="#" class="layout-footer-contact_tel">400-788-3333</a>
+				<a class="layout-footer-contact_online" href="#">
+					<i class="icon iconfont icon-liaotian"></i>
+					<span class="txt">在线客服</span>
+				</a>
+			</div>
+		</div>
+		<div class="layout-footer-bottom">
+			<ul class="layout-footer-bottom_uls">
+				<li class="layout-footer-bottom_list"><a class="layout-footer-bottom_list_link" href="#" style="padding-left: 0;">了解魅族</a></li>
+				<li class="layout-footer-bottom_list"><a class="layout-footer-bottom_list_link" href="#">加入我们</a></li>
+				<li class="layout-footer-bottom_list"><a class="layout-footer-bottom_list_link" href="#">联系我们</a></li>
+				<li class="layout-footer-bottom_list"><a class="layout-footer-bottom_list_link" href="#">Flyme</a></li>
+				<li class="layout-footer-bottom_list"><a class="layout-footer-bottom_list_link" href="#">魅族社区</a></li>
+				<li class="layout-footer-bottom_list"><a class="layout-footer-bottom_list_link" href="#">天猫旗舰店</a></li>
+				<li class="layout-footer-bottom_list"><a class="layout-footer-bottom_list_link" href="#">问题反馈</a></li>
+				<li class="layout-footer-bottom_list"><a class="layout-footer-bottom_list_link" href="#" style="border-right: none;">线上销售授权名单公示</a></li>
+			</ul>
+			<div class="layout-footer-copyright">
+				<div class="layout-footer-copyright_L">
+					<span class="layout-footer-copyright_txt">©2017 Meizu Telecom Equipment Co., Ltd. All rights reserved.</span>
+					<a href="#" class="layout-footer-copyright_link">粤ICP备13003602号-2</a>
+					<a href="#" class="layout-footer-copyright_link">合字B2-20170010</a>
+					<a href="#" class="layout-footer-copyright_link">营业执照</a>
+					<a href="#" class="layout-footer-copyright_link">法律声明</a>
+					<span style="margin-right: 3px;">粤公网安备 44049102496009 号</span>
+				</div>
+				<div class="layout-footer-copyright_R">
+					<a href="#" class="layout-footer-media_link"><i class="icon iconfont icon-weibo"></i></a>
+					<a href="#" class="layout-footer-media_link wechat">
+						<i class="icon iconfont icon-icon-"></i>
+						
+					</a>
+					<a href="#" class="layout-footer-media_link"><i class="icon iconfont icon-kongjian"></i></a>
+					<div class="layout-footer-media-wechat-qrcode">
+						<img class="footer_qrcode" src="img/wx-code_94c130c.jpg"/>
+						<img class="footer_icon" src="img/footer_icon.png" style="z-index: -2;"/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+
+
+
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+	
+	//header导航下拉菜单效果
+	$(".header_member_link").mouseenter(function(){
+		$(".header_member_downmune").css("height","178px");
+	});
+	$(".header_member").mouseleave(function(){
+		$(".header_member_downmune").css("height","0px");
+	})
+	
+	//footer中微信二维码效果
+	$(".layout-footer-media_link.wechat").mouseenter(function(){
+		$(".layout-footer-media-wechat-qrcode").toggle("slow");
+	});
+	$(".layout-footer-media_link.wechat").mouseleave(function(){
+		$(".layout-footer-media-wechat-qrcode").toggle("slow");
+	});
+	
+</script>

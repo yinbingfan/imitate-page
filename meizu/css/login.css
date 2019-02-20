@@ -1,0 +1,586 @@
+html,body,div,p,ul,ol,li,dl,dt,dd,form,table,tr,td,th,hr,h1,h2,h3,h4,h5,h6,img,input{
+	margin: 0;
+	padding:0;
+	border: 0;
+}
+html,body{
+	height: 100%;
+}
+body{
+	font-family: "微软雅黑",Arial;
+	margin: 0 auto;
+}
+a{
+	text-decoration:none;
+}
+img{
+	border:none;
+	display: block;
+}
+ul,li{
+	list-style: none;
+}
+/*header*/
+.header{
+	width: 100%;
+	height: 80px;
+}
+.header .logo{
+	width: 240px;
+	height:80px ;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*banner*/
+.banner-box {
+	position: relative;
+	/*overflow: hidden;*/
+	min-height: 750px;
+	max-height: 1080px;
+    background: #f8fcff;
+    /*background: linear-gradient(to bottom, #f8fcff, #f8fcff, #f8fcff);*/
+}
+.banner-box:before {
+	position: absolute;
+	content: ' ';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(//uc-res.mzres.com/resources/uc/wlogin/member/images/banner.png) no-repeat center;
+	background-size: contain;
+}
+/*form*/
+.login_form{
+	width: 298px;
+	position: absolute;
+	right:230px ;
+	top: 106px;
+	background: #fff;
+	padding: 35px 35px 10px;
+	border-radius: 2px;
+}
+#login_form input{
+	height: 22px;
+	line-height: 22px;
+}
+.tab-title{
+	font-size: 18px;
+	text-align: center;
+	margin-top: 35px;
+    width: 300px;
+}
+.tab-title .linkABlue{
+    color: #32A5E7;
+    transition: all .5s;
+}
+.tab-title .linkABlue:hover{
+	color: #005AA0;
+	transition: all .5s;
+}
+
+.tab-title .linkAGray{
+    color: #7f7f7f;
+}
+.tab-title .linkAGray:hover{
+	color: #333;
+}
+
+.register-line{
+	color: #B3ABAB;
+	display: inline-block;
+    border: 2px solid #B3ABAB;
+    border-left: 1px;
+    height: 10px;
+    line-height: 20px;
+    margin-right: 32px;
+    margin-left: 32px;
+}
+.tip-box{
+	width: 298px;
+	height: 33px;
+	margin:26px 0 ;
+	border: solid 1px #ffc2b3;
+    background: #ffd1ca;
+    border-radius: 2px;
+    position: relative;
+    
+}
+.tip-box .error_icon{
+	background:url(../img/error-ico.png) no-repeat left center;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+.tip-box .tip_txt{
+	color: #666;
+    font-size: 12px;
+    padding-right: 25px;
+    padding-left: 35px;
+   	vertical-align: middle;
+    /*display: table-cell;垂直居中*/
+    line-height: 33px;
+}
+.tip-box .tip_close{
+	background:url(../img/close-ico.png) no-repeat right center;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+
+
+/*temp*/
+.normalInput{
+	margin-bottom: 20px;
+	border-radius: 2px;
+	width: 276px;
+	position: relative;
+	padding: 0 10px;
+	height: 46px;
+	line-height: 46px;
+	font-size: 14px;
+	border: 1px solid #dadada;
+    outline: none;
+    color: #474747;
+}
+.normalInput input{
+	width: 94%;
+	height: 46px;
+	line-height:46px;
+	vertical-align: middle;
+	outline: none;
+}
+.normalInput.btn_focus{
+	border: 1px solid #32A5E7;
+}
+
+.register_phonebox{
+	margin: 0 0 36px 0;
+	font-size: 14px;
+	height: 46px;
+	line-height: 46px;
+	border: 1px solid #DDD;
+	padding: 0 10px;
+	position: relative;
+}
+.btn_focus{
+	border: 1px solid #32A5E7;
+}
+.register_phonebox .cycode-selected{
+	display: inline-block;
+	width: 60px;
+	border-right: 1px solid #DDD;
+    cursor: pointer;
+}
+.cycode-selectbox input{
+	outline: none;
+}
+.ipt-cycode{
+	width: 60%;
+    color: grey;
+    text-align: center;
+    cursor: pointer;
+}
+.arrow-down{
+	background: url(../img/arrow-down.png) no-repeat right center;
+	display: inline-block;
+	width: 14px;
+	height: 8px;
+}
+#kapkey {
+    width: 160px;
+    border: none;
+    outline: none;
+    height: 46px;
+    font-size: 14px;
+    line-height: 22px;
+}
+span.inputTip {
+    position: absolute;
+    top: 13px;
+    left: 10px;
+    color: #909090;
+    font-size: 14px;
+    height: 22px;
+    line-height: 22px;
+}
+.form-line {
+    color: #d9d9d9;
+    height: 22px;
+    display: inline-block;
+    border-left: 1px solid #dadada;
+    position: absolute;
+    right: 140px;
+    top: 12px;
+}
+#getKey {
+    width: 120px;
+    text-align: center;
+    border: none;
+    outline: none;
+    height: 46px;
+    line-height: 46px;
+    font-size: 14px;
+    position: absolute;
+    right: 13px;
+    top: 0px;
+    color: #7f7f7f;
+}
+.register_phonebox{
+	display: none;
+}
+
+/*temp完*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+.register_btn{
+	position: relative;
+    /*top: 0;*/
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    width: 294px;
+    height: 42px;
+    cursor: pointer;
+    /*opacity: 1;*/
+   overflow: hidden;
+}
+.register_btn_before{
+	width: 100%;
+	height: 100%;
+	position: relative;	
+}
+.before_btn{
+	float: left;
+	width: 32px;
+	height: 32px;
+	background: url(../img/register_btn.png) no-repeat left center;
+	margin: 5px;
+}
+.before_btn_R{
+	float: right;
+	width: 32px;
+	height: 32px;
+	margin-top: 5px;
+	background: url(../img/sprite.1.4.6.png) no-repeat 1px -99px;
+}
+.register_btn_before_txt{
+	line-height: 42px;
+    font-size: 14px;
+    color: #666;
+    white-space: nowrap;
+}
+.register_btn_after{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	left: 0;
+	top: -42px;
+	/*opacity: 0;*/
+	display: none;
+	border-color: #26C267;
+	background:#eefff5;
+}
+.after_btn{
+	float: left;
+	width: 32px;
+	height: 32px;
+	background: url(../img/sprite.1.4.6.png) no-repeat 1px -156px;
+	margin: 5px;
+}
+.after_btn_R{
+	float: right;
+	width: 32px;
+	height: 32px;
+	margin-top: 5px;
+	background: url(../img/sprite.1.4.6.png) no-repeat 1px -205px;
+}
+.register_btn_after_txt{
+	line-height: 42px;
+    font-size: 14px;
+  	color: #18A452;
+    white-space: nowrap;
+}
+
+.rememberField{
+	height: 24px;
+	line-height: 24px;
+	margin-bottom: 25px;
+	margin-top: 22px;
+}
+.rememberField .checkboxPic{
+	display: block;
+	width: 20px;
+	height: 20px;
+	float: left;
+}
+/*
+.rememberField .checkboxPic .i_icon{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+	background: url(../img/elements.png) no-repeat;
+}
+.checkboxPic.check_chk .i_icon{
+	background-position: -31px -127px;
+}
+.checkboxPic.check_unchk .i_icon{
+	background-position: 0px -127px;
+}
+*/
+.rememberField input{
+	float: left;
+	width: 16px;
+}
+.rememberField label{
+	margin-right: 7px;
+	margin-left: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #7f7f7f;
+    float: left;
+}
+
+.register_btn_nextstep{
+	display: block;
+	width: 297px;
+	height: 46px;
+	line-height: 46px;
+	background: #32a5e7;;
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	cursor: pointer;
+	margin-bottom: 20px;
+	border-radius: 2px;
+}
+.register_btn_nextstep:hover{
+	background: #2b8cc5;
+}
+.transferField{
+    margin-bottom: 5px;
+}
+.goregister{
+	font-size: 14px;
+    color:#00C3F5;
+}
+.goregister:hover{
+	color:#319fc5;	
+}
+.goforgetpass{
+	font-size: 14px;
+    color: #00C3F5;
+    float: right;
+}
+.goforgetpass:hover{
+	color:#319fc5;	
+}
+
+.qr_btn{
+	display: inline-block;
+	width:35px;
+	height: 35px;
+	background: url(../img/qr.png) no-repeat center center;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}	
+.qr_btn.pc_btn{
+    background: url(../img/pc.png) no-repeat center center;
+}
+.qr_panel{
+	width: 100%;
+	height: 460px;
+	position: absolute;
+	left: 0;
+	top: 60px;
+    background-color: #FFF;
+    z-index: 999;
+    text-align: center;
+    display: none;
+}
+.qr_panel h3{
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    font-weight: normal;
+}
+.qr_panel .qr_img_box{
+	width: 300px;
+	height: 300px;
+	margin:20px auto;
+}
+.qr_img_box img{
+	width: 100%;
+}
+.qr_panel .tips{
+    font-size: 16px;
+    color: #999;
+}
+
+
+/*footer*/
+.flymefooter{
+	width: 100%;
+    height: 130px;
+    /*border-top: solid 1px #E5E6E7;*/
+    background-color: #fff;
+    color: black;
+}
+.flymefooter_content{
+	width: 1000px;
+    margin: 30px auto 30px;
+    /*overflow: hidden;*/
+   display: flex;
+   flex-flow: column;
+}
+.footer-layer{
+	margin-bottom: 20px;
+}
+.footer-layer_innerlink{
+	float: left;
+}
+.footer-layer_innerlink li{
+	float: left;
+	font-size: 14px;
+	padding: 11px;
+	background: url(../img/base.png) no-repeat 24px -147px;
+}
+.footer-layer_innerlink li a{
+	color: #000000;
+}
+.footer-layer_innerlink li a:hover{
+	color: #C0C0C0;
+}
+.footer-layer_innerlink .footer-innerLink_language_btn{
+	position: relative;
+	background: url(../img/base.png) no-repeat -70px -138px;
+}
+.footer-innerLink_language{
+	position: absolute;
+	left: 0;
+	top: -30px;
+	display: block;
+	width: 76px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	border:1px solid  #E5E6E7;
+	display: none;
+	transition: all .5s;
+} 
+.footer-innerLink_language_btn:hover .footer-innerLink_language{
+	display: block;
+}
+.footer-layer_services{
+	float: left;
+    margin-left: 36px;
+    font-size: 14px;
+    line-height: 41px;
+}
+.service-label{
+	margin-right: 10px;
+}
+.service-tel{
+	margin-right: 20px;
+}
+.service-online{
+	display: inline-block;
+	width: 66px;
+	height: 20px;
+	line-height: 20px;
+	background:#32a5e7;
+	color: #fff;
+	border-radius: 2px;
+    text-align: center;
+}
+.service-online:hover{
+	background: #00C3F5;
+}
+.footer-layer_outerlink{
+	position: relative;
+    float: right;
+    padding-top:3px;
+}
+.footer-layer_outerlink a{
+	margin-left: 10px;
+    display: inline-block;
+    /*overflow: hidden;*/
+    width: 33px;
+    height: 33px;
+}
+.footer-layer_outerlink .icon{
+	display: inline-block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+	background: url(../img/base.png) no-repeat;
+}
+.outerlink_sina .icon{
+	background-position: -218px -91px;
+}
+.outerlink_sina:hover .icon{
+	background-position: -218px -137px;
+}
+.outerlink_wechat .icon{
+	background-position: -301px -91px;
+}
+.outerlink_wechat:hover .icon{
+	background-position: -301px -137px;
+}
+.outerlink_wechat_pic{
+	position: absolute;
+    left: -80px;
+    top: -264px;
+	width: 270px;
+	height: 270px;
+	background: url(../img/weixin.png) no-repeat;
+	z-index: 10000;
+	display: none;
+}
+.outerlink_wechat i:hover .outerlink_wechat_pic{
+	
+}
+.outerlink_qzone .icon{
+	background-position: -343px -91px;
+}
+.outerlink_qzone:hover .icon{
+	background-position: -343px -137px;
+}
+
+.flymeCopyright{
+	font-size: 12px;
+	color: #a8a8a8;
+}
+.layout-footer-copyright_txt{
+	float: left;
+}
+.layout-footer-copyright_link{
+	float: left;
+	margin-left:6px ;
+	color: #a8a8a8;
+}
+.layout-footer-copyright_link:hover{
+	color: gray;
+}

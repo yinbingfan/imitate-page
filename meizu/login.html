@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Flyme账号-登录</title>
+	<link rel="stylesheet" type="text/css" href="css/login.css"/>
+</head>
+<body>
+<!-- header -->
+	<div class="header">
+		<div class="logo">
+			<a href="MZindex.html"><img src="img/logo.png"/></a>
+		</div>
+	</div>
+<!--banner-->
+		<div class="banner-box">
+			<form id="login_form" class="login_form" action="" method="post">
+				<div class="tab-title">
+					<a href="#" class="linkABlue" id="toAccountLogin">账号登录</a>
+					<span class="register-line"></span>
+					<a href="#" class="linkAGray" id="toVCodeLogin">验证码登录</a>
+				</div>
+				<div class="tip-box">
+					<span class="error_icon"></span>
+					<span class="tip_txt">请填写完整的登录信息</span>
+					<span class="tip_close"></span>
+				</div>
+				<div class="normalInput accountNum">
+					<input type="text" name="" id="" value="" placeholder="手机号/ Flyme账号"/>
+				</div>
+				
+				<!--temp-->
+				<div class="register_phonebox tel" id="register_phonebox">
+					<div class="cycode-selectbox">
+						<span class="cycode-selected">
+							<input class="ipt-cycode" id="cycode" value="+86">
+							<i class="arrow-down"></i>
+						</span>
+						<input id="phone" name="phone" class="ipt-phone inp-focus" placeholder="手机号码" style="margin-bottom: 20px;">
+					</div>	
+				</div>
+				<div class="register_phonebox num">
+					<input type="text" class="pswInput inp-focus" name="kapkey" id="kapkey" maxlength="6" autocomplete="off" tabindex="3"><span class="inputTip">验证码</span>
+					<span class="form-line"></span>
+					<a id="getKey" href="#" class="linkABlue invalidBtn">获取验证码</a>
+				</div>
+				<!--temp完-->
+				
+				<div class="normalInput passNum">
+					<input type="password" name="" id="" value="" placeholder="密码"/>
+				</div>
+				
+				<div class="register_btn">
+					<div class="register_btn_before">
+						<span class="before_btn"></span>
+						<span class="register_btn_before_txt">点击按钮进行验证</span>
+						<span class="before_btn_R"></span>
+					</div>
+					<div class="register_btn_after">
+						<span class="after_btn"></span>
+						<span class="register_btn_after_txt">验证成功</span>
+						<span class="after_btn_R"></span>
+					</div>
+				</div>
+				<div class="rememberField">
+	                <span class="mzchkbox">
+	                	<!--<span class="checkboxPic check_chk">
+	                		<i class="i_icon"></i>
+	                	</span>-->
+	                	<input name="remember" id="remember" type="checkbox" value="1" checked="checked"/>
+	                </span>
+	                <label for="remember">记住登录状态</label> 
+	            </div>
+	            <a class="register_btn_nextstep" id="register_btn_nextstep">登录</a>
+				<div class="transferField">
+					<a class="goregister" href="register.html" id="toLogin">注册</a>
+					<a class="goforgetpass" href="#">忘记密码?</a>
+				</div>
+				<span class="qr_btn" id="qr_btn"></span>
+				<div id="qr_panel" class="qr_panel">
+					<h3>扫描安全登录</h3>
+					<div class="qr_img_box">
+						<img alt="" src="img/mzQrShow.jpg"/>
+					</div>
+					<p class="tips">请使用最新Flyme系统相机扫码功能，扫码登录</p>
+				</div>
+			</form>
+		</div>
+<!--footer-->
+	<div class="flymefooter">
+		<div class="flymefooter_content">
+			<div class="footer-layer">
+				<ul class="footer-layer_innerlink">
+					<li><a href="#">关于魅族</a></li>
+					<li><a href="#">工作机会</a></li>
+					<li><a href="#">联系我们</a></li>
+					<li><a href="#">法律声明</a></li>
+					<li class="footer-innerLink_language_btn">
+						<a href="#">简体中文</a>
+						<a href="#" class="footer-innerLink_language">English</a>
+					</li>
+				</ul>
+				<div class="footer-layer_services">
+					<span class="service-label">客服热线</span>
+					<span class="service-tel">400-788-3333</span>
+					<a class="service-online" href="#">在线客服</a>
+				</div>
+				<div class="footer-layer_outerlink">
+					<a href="#" class="outerlink_sina">
+						<i class="icon"></i>
+					</a>
+					<a href="#" class="outerlink_wechat">
+						<i class="icon"></i>
+					</a>
+					<a href="#" class="outerlink_qzone">
+						<i class="icon"></i>
+					</a>
+					<span class="outerlink_wechat_pic"></span>
+				</div>
+			</div>
+			<div class="flymeCopyright">
+				<span class="layout-footer-copyright_txt">©2017 Meizu Telecom Equipment Co., Ltd. All rights reserved.</span>
+				<a href="#" class="layout-footer-copyright_link">备案号：粤ICP备13003602号-4</a>
+				<a href="#" class="layout-footer-copyright_link">经营许可证编号: 粤B2-20130198</a>
+				<a href="#" class="layout-footer-copyright_link">营业执照</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+
+	//信息不完整提示框
+	$(".tip_close").click(function(){
+		$(".tip-box").css({visibility:"hidden"});
+	});
+	
+	//电话号码input框获取焦点时边框变色
+	$(".normalInput").focusin(function(){
+		$(this).removeClass(".normalInput");
+		$(this).addClass("normalInput btn_focus");
+	});	
+	$(".normalInput").focusout(function(){
+		$(this).addClass("normalInput");
+		$(this).removeClass(".normalInput btn_focus");
+	});
+	
+	//点击验证成功
+	$(".register_btn_before .before_btn").click(function(){
+		$(".register_btn_after").show("fast");
+	});
+	
+	//右上角pc和二维码方式切换
+	let num=0;
+	$(".qr_btn").click(function(){
+		num++;
+		if(num%2!=0){
+			$(this).addClass("pc_btn");
+			$(".qr_panel").toggle();
+		}	
+		else{
+			$(this).removeClass("pc_btn");
+			$(".qr_panel").toggle();
+		}
+	});
+	
+	//登录方式切换效果
+	$("#toAccountLogin").click(function(){
+		$(this).removeClass();
+		$(this).addClass("linkABlue");
+		$("#toVCodeLogin").removeClass("linkABlue");
+		$("#toVCodeLogin").addClass("linkAGray");
+		$(".register_phonebox").toggle();
+		$(".normalInput").toggle();
+		$(".register_btn").toggle();
+		$(".rememberField").toggle();
+	});
+	$("#toVCodeLogin").click(function(){
+		$(this).removeClass();
+		$(this).addClass("linkABlue");
+		$("#toAccountLogin").removeClass("linkABlue");
+		$("#toAccountLogin").addClass("linkAGray");
+		$(".register_phonebox").toggle();
+		$(".normalInput").toggle();
+		$(".register_btn").toggle();
+		$(".rememberField").toggle();
+	});	
+
+
+	//footer中微信二维码
+	$(".outerlink_wechat").mouseenter(function(){
+		$(".outerlink_wechat_pic").toggle("fast");
+	});
+	$(".outerlink_wechat").mouseleave(function(){
+		$(".outerlink_wechat_pic").toggle("fast");
+	});
+</script>
