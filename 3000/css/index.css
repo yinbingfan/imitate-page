@@ -1,6 +1,700 @@
 body{
-    background: #007aff;
+
 }
 .animated{
     animation-name: fadeInLeft;
 }
+/*头部导航*/
+.header{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 2000;
+    /*background: aliceblue;*/
+}
+.top {
+    width: 1200px;
+    margin: 20px auto 0;
+}
+
+.header .logo {
+    float: left;
+}
+
+.header .logo a {
+    margin-right: 20px;
+}
+
+.header .logo img {
+    vertical-align: middle;
+}
+.header .iphone{
+    float: left;
+}
+.header .iphone img {
+    vertical-align: middle;
+}
+.nav {
+    float: right;
+}
+
+.nav ul {
+    float: left;
+}
+
+.nav li {
+    float: left;
+    position: relative;
+    z-index: 10;
+}
+
+.nav li a {
+    font-size: 18px;
+    color: #e8e8e9;
+    height: 80px;
+    line-height: 80px;
+    margin: 0 24px;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+}
+
+.nav li a:hover {
+    color: #db5a21
+}
+/*头部导航结束*/
+
+/*轮播图开始*/
+.swiper-container{
+    width: 100%;
+    height:100%;
+    margin: 0 auto;
+}
+.swiper-wrapper{
+    width: 100%;
+    overflow: hidden;
+}
+.swiper-slide{
+    width:100%;
+    background-position: center;
+    background-size: cover;
+}
+.swiper-slide img{
+    width:100%;
+    height:700px;
+}
+/*轮播图结束*/
+
+
+
+/*产品服务开始*/
+.product-service{
+    background: url(../img/bj-2.jpg) repeat center top;
+    padding-bottom: 45px;
+}
+
+.cont_service {
+    /*background: url(../img/bj-2.jpg) repeat center top;*/
+    padding: 50px 0 0;
+    text-align: center;
+    position: relative;
+}
+
+.cont_title {
+    position: relative;
+    z-index: 2;
+    height: 70px;
+    text-align: center;
+
+}
+.cont_title h3{
+    height: 35px;
+    line-height: 35px;
+    background: url(../img/fg.png) no-repeat center center;
+    font-size: 30px;
+    color: #b1b1b1;
+}
+.cont_title p {
+    color: #999;
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.service_ico ul {
+    width: 1080px;
+    margin: 0 auto;
+    height: 220px;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 50px;
+    margin-top: 30px;
+}
+
+.service_ico li {
+    float: left;
+    width: 20%;
+    position: relative;
+    border: 1px solid #b3b3b3;
+    padding: 60px 20px;
+}
+.service_ico li:nth-of-type(1) {
+    border-right: none;
+}
+.service_ico li:nth-of-type(3) {
+    border-right: none;
+    border-left: none;
+}
+.service_ico li:nth-of-type(5) {
+    border-left: none;
+}
+.service_ico li a{
+
+}
+
+.service_ico li div.p02 {
+    line-height: 28px;
+    font-size: 16px;
+    margin-top: 15px;
+    color: #b4b4b4;
+}
+
+.service_ico li .span {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    position: relative;
+    z-index: 2
+}
+
+.service_ico li .span {
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    transition: all 2s ease;
+}
+
+.service_ico li:hover .span {
+    transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+
+.service_ico li .span01 {
+    background-position: 0 0;
+}
+
+.service_ico li .span02 {
+    background-position: -240px 0;
+}
+
+.service_ico li .span03 {
+    background-position: -480px 0;
+}
+
+.service_ico li .span04 {
+    background-position: -720px 0;
+}
+
+.service_ico li .span05 {
+    background-position: -960px 0;
+}
+
+.service_ico li h2 {
+    color:#808080 ;
+    font-size:24px ;
+}
+.service_ico li p {
+    color: #b4b4b4;
+    font-size:16px ;
+    line-height: 30px;
+}
+/*产品服务结束*/
+
+/*相关案例开始*/
+.related-case-list{
+    background: url(../img/bj-3.jpg) repeat center top;
+    padding-bottom: 40px;
+}
+.related_title{
+    /*background: url(../img/bj-2.jpg) repeat center top;*/
+    position: relative;
+    z-index: 2;
+    height: 150px;
+    text-align: center;
+    padding: 40px 0 10px;
+}
+.related_title h3{
+    height: 35px;
+    line-height: 35px;
+    background: url(../img/fg.png) no-repeat center center;
+    font-size: 30px;
+    color: #b1b1b1;
+}
+.related_title p {
+    color: #999;
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 20px;
+}
+.related-case-list .service_ico{
+    margin-bottom: 20px;
+}
+.casebox {
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+    width: 19.5%;
+    float: left;
+
+}
+.casebox:nth-of-type(2){
+    margin:0 .5% 0;
+}
+.casebox:nth-of-type(4){
+    margin:0 .5% 0;
+}
+.casebox > a > .picbox >img {
+    width: 100%;
+    height: 100%;
+}
+.picbox{
+    width: 100%;
+    height: 240px;
+}
+.transition500 {
+    transition: 500ms ease-out;
+    -webkit-transition: 500ms ease-out;
+    -ms-transition: 500ms ease-out;
+    -moz-transition: 500ms ease-out;
+    -o-transition: 500ms ease-out;
+}
+.casebox> a > .picbox > .mask {
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    opacity: 0;
+    text-align: center;
+}
+.casebox> a > .picbox > .mask > img {
+    width: 120px;
+    margin-top: 30%;
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+}
+.workinfo {
+    padding: 20px;
+    height: 110px;
+    color: #666;
+    background: #fff;
+    transition: background-color .5s,color .5s;
+    -webkit-transition: background-color .5s,color .5s;
+    position: relative;
+    z-index: 3;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+}
+.casebox > a .workinfo > .casename {
+    font-size: 18px;
+    margin: 0px;
+    padding: 0px;
+}
+.casebox:hover > a > .picbox>.mask {
+    opacity: 1;
+
+}
+.casebox:hover > a > .workinfo  {
+    /*opacity: 1;*/
+    background-color: rgba(230,0,18,0.76);
+    color: #fff;
+}
+/*相关案例结束*/
+
+/*团队team开始*/
+
+/*团队team结束*/
+
+/*网站建设流程开始*/
+
+/*网站建设流程结束*/
+
+/*行业资讯/公司动态... Other area 开始*/
+.news_tabs {
+    width: 1900px;
+    margin: 15px auto 20px;
+}
+
+.tabs_menu {
+    height: 17px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.tabs_menu span {
+    font-size: 15px;
+    padding: 0 50px;
+    line-height: 32px;
+    cursor: pointer;
+    display: inline-block;
+    border: 1px solid #8c8a8c;
+    position: relative;
+    background: #fff;
+    margin-left: -1px;
+    font-weight: bold;
+    vertical-align: middle;
+    margin: 0 10px;
+    /*border-radius: 18px;*/
+    color: #8c8a8c;
+}
+
+.tabs_menu span.on {
+    border-color: #db5a21;
+    /*background: #db5a21;*/
+    color: #db5a21;
+}
+
+.tabs_menu em.l {
+    background: url(../images/tabxx.jpg) left top no-repeat;
+    width: 17px;
+    height: 34px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle
+}
+
+.tabs_menu em.r {
+    background: url(../images/tabxx.jpg) right top no-repeat;
+    width: 17px;
+    height: 34px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle
+}
+
+.tabs_menudiv li {
+    display: none;
+    min-height: 400px;
+}
+.aboutlist {
+    margin-top: 20px;
+}
+
+.aboutlist .a_li {
+    float: left;
+    width: 300px;
+    font-size: 13px;
+    color: #888;
+    margin-left: 18px;
+}
+
+.aboutlist .a_li:first-child {
+    margin-left: 0;
+}
+
+.aboutlist .a_li .img {
+    text-align: right;
+    margin-bottom: 5px;
+}
+.aboutlist .a_li .img img{
+    width: 100%;
+}
+.aboutlist .a_li .text {
+    /*padding-right: 48px;*/
+}
+.aboutlist .a_li .text h2{
+    color: #666666;
+    font-size: 18px;
+    border-bottom: 1px solid #d9d9d9;
+    line-height: 50px;
+}
+.aboutlist .a_li .text p {
+    color: #666666;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 5px 0 20px;
+}
+
+.newsli dl {
+    float: left;
+    width: 257px;
+    margin: 0 8px;
+    padding: 10px;
+    border: 1px #ddd solid;
+}
+
+.newsli dl dt {
+    width: 257px;
+    height: 167px;
+    overflow: hidden;
+}
+
+.newsli dl dt img {
+    width: 257px;
+    height: 167px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition-delay: 0s;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+    -moz-transition-delay: 0s;
+    -moz-transition-duration: 1s;
+    -moz-transition-property: all;
+    -moz-transition-timing-function: ease;
+    -webkit-transition-delay: 0s;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-property: all;
+    -webkit-transition-timing-function: ease;
+    -o-transition-delay: 0s;
+    -o-transition-duration: 1s;
+    -o-transition-property: all;
+    -o-transition-timing-function: ease;
+}
+
+.newsli dl dt img:hover {
+    transform: scale(1.2, 1.2) rotate(6deg);
+    -ms-transform: scale(1.2, 1.2) rotate(6deg);
+    -moz-transform: scale(1.2, 1.2) rotate(6deg);
+    -webkit-transform: scale(1.2, 1.2) rotate(6deg);
+    -o-transform: scale(1.2, 1.2) rotate(6deg);
+}
+
+.newsli dl dd h3 {
+    font-size: 15px;
+    margin: 10px 0 4px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.newsli dl dd p {
+    font-size: 13px;
+    color: #888;
+    height: 144px;
+    line-height: 24px;
+    overflow: hidden
+}
+
+.newsmore {
+    margin-top: 20px;
+    text-align: center
+}
+
+.newsmore a {
+    display: inline-block;
+    padding: 0 20px;
+    background: #db5a21;
+    color: #fff;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.jobli dl {
+    float: left;
+    width: 257px;
+    margin: 0 18px;
+    font-size: 13px;
+}
+
+.jobli dl dt {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.jobli dl dd {
+    color: #888;
+    line-height: 24px;
+    overflow: hidden
+}
+
+.jobli dl dd b {
+    color: #555;
+}
+
+/*行业资讯/公司动态... Other area 结束*/
+
+/*底部样式开始*/
+.foot_navbg {
+    background: #595959;
+}
+.foot-link{
+    background: #4d4d4d;
+}
+.foot_nav {
+    padding: 25px 0;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.foot_nav dl {
+    float: left;
+    width: 128px;
+    margin-right: 50px;
+    border-right: 1px #bbb dashed;
+}
+
+.foot_nav dl dt,.foot_nav .foot_nav_ab h3 {
+    font-size: 18px;
+    font-weight: normal;
+    color: #e4e4e4;
+}
+
+.foot_nav dl dd p {
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 8px;
+}
+.foot_nav dl dd p a{
+    color: #a4a4a4;
+}
+.foot_nav .foot_nav_ab {
+    float: left;
+}
+
+.foot_nav .foot_nav_ab .hz_list {
+    margin: 14px 0 25px;
+}
+
+.foot_nav .foot_nav_ab .hz_list a {
+    margin-right: 10px;
+}
+
+.foot_nav .foot_nav_ab .phone_list {
+    margin-top: 14px;
+    font-size: 14px;
+}
+
+.foot_nav .foot_nav_ab .phone_list li {
+    float: left;
+    width: 140px;
+    color: #888;
+}
+
+.foot_nav .foot_nav_ab .phone_list li span {
+    color: #2e63ae
+}
+
+.ewm {
+    float: right;
+    width: 280px;
+    margin-top: 5px;
+}
+
+.ewm .ewm1 {
+    float: left;
+}
+
+.ewm .ewm2 {
+    float: right;
+}
+
+.copyright {
+    text-align: center;
+    line-height: 28px;
+    font-size: 14px;
+    background: #4d4d4d;
+}
+.copyright-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.copyright a {
+    color: #fff;
+}
+.copyright .copyright-left{
+    width: 430px;
+    height: 106px;
+}
+.copyright .copyright-left img{
+    width: 300px;
+    height: 106px;
+}
+
+.copyright .copyright-right{
+
+}
+.copyright .copyright-right .contact-address{
+    display: flex;
+
+}
+
+.copyright .copyright-right .contact-address .address{
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.copyright .copyright-right .contact-address .address:nth-child(1){
+    margin-right: 20px;
+}
+.copyright .copyright-right .contact-address .address img{
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+}
+.copyright .copyright-right .contact-address .address span{
+    font-size: 16px;
+}
+
+.y_link {
+    height: auto;
+    padding: 25px 0;
+    width: 1200px;
+    margin: 0 auto;
+    border-bottom: 1px #999999 dashed;
+}
+
+.list_link {
+    list-style: none;
+
+}
+
+.list_link li {
+    float: left;
+    padding-right: 20px;
+    line-height: 30px;
+}
+
+.list_link li a,.list_link li a:visited {
+    text-decoration: none;
+    text-align: center;
+    color: #c5c5c5;
+}
+
+.list_link li a:hover {
+    color: #6e6e6e;
+}
+
+
+
+.clear {
+    clear: both;
+    line-height: 0;
+    height: 0;
+    font-size: 0;
+}
+/*底部样式结束*/
