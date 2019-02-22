@@ -10,12 +10,14 @@ body{
     top:0;
     left: 0;
     width: 100%;
-    height: 80px;
+    height: 120px;
     z-index: 2000;
     /*background: aliceblue;*/
+    background: rgba(17,17,17,.4);
+
 }
 .top {
-    width: 1200px;
+    width: 1500px;
     margin: 20px auto 0;
 }
 
@@ -33,11 +35,17 @@ body{
 .header .iphone{
     float: left;
 }
+.header .iphone a{
+    display:inline-block;
+    width:300px;
+    margin-top: 20px;
+}
 .header .iphone img {
+
     vertical-align: middle;
 }
 .nav {
-    float: right;
+    float: left;
 }
 
 .nav ul {
@@ -48,28 +56,32 @@ body{
     float: left;
     position: relative;
     z-index: 10;
+
 }
 
 .nav li a {
     font-size: 18px;
-    color: #e8e8e9;
+    color: #f2f2f2;
     height: 80px;
     line-height: 80px;
     margin: 0 24px;
     text-align: center;
     display: block;
     font-weight: bold;
+
 }
 
 .nav li a:hover {
-    color: #db5a21
+    color: #db5a21;
+    border-bottom: 1px solid #e05f26;
 }
 /*头部导航结束*/
 
 /*轮播图开始*/
 .swiper-container{
     width: 100%;
-    height:100%;
+    /*height:100%;*/
+    height:700px;
     margin: 0 auto;
 }
 .swiper-wrapper{
@@ -80,10 +92,176 @@ body{
     width:100%;
     background-position: center;
     background-size: cover;
+    position: relative;
 }
-.swiper-slide img{
+.swiper-slide .banner-des{
+    position: absolute;
+    top: 30%;
+    left: 16%;
+    width: 840px;
+    height: 280px;
+    background: rgba(255,255,255,.18);
+    padding:60px 200px;
+}
+
+.banner-des .banner-des-top{
+    color: #f6f6f6;
+}
+.banner-des .banner-des-top h1{
+    font-size: 50px;
+    font-family: '华文行楷';
+    animation-duration: 2.8s ;
+    transition: all 400ms;
+    animation-name: zoomIn;
+}
+.banner-des .banner-des-top p{
+    font-size: 16px;
+}
+.banner-des .banner-des-bottom{
+    color: #f6f6f6;
+}
+.banner-des .banner-01{
+    animation-duration: 2.8s ;
+    transition: all 400ms;
+    animation-name: zoomIn;
+}
+.banner-des .banner-des-bottom p:nth-of-type(1){
+    width: 50px;
+    color: #f6f6f6;
+    border-bottom: 3px solid #e05e25;
+    margin: 20px 0;
+    animation-duration: 2.8s ;
+    transition: all 400ms;
+    animation-name: zoomIn;
+}
+.banner-des .banner-des-bottom p:nth-of-type(2){
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.swiper-slide .banner-img{
     width:100%;
     height:700px;
+}
+.banner-des-2{
+    position: absolute;
+    top: 30%;
+    left: 18%;
+    width: 800px;
+    height: 280px;
+    /*background: rgba(255,255,255,.18);*/
+    padding:60px 200px;
+}
+.banner-des-2 .banner-des-top{
+    margin-bottom: 153px;
+}
+.banner-des-2 .banner-des-top h1:nth-of-type(1){
+    font-size: 36px;
+    font-family: '华文行楷';
+    color: #f6f6f6;
+    background: rgba(255,255,255,.18);
+    height: 50px;
+    line-height: 50px;
+    animation-duration: 2.8s ;
+    transition: all 400ms;
+    animation-name: zoomIn;
+}
+.banner-des-2 .banner-des-top h1:nth-of-type(2){
+    color: #ff2a00;
+    font-size: 22px;
+    line-height: 40px;
+}
+.banner-des-2 .banner-des-top p{
+    font-size: 14px;
+    color: #ff2a00;
+}
+.banner-des-2 .banner-des-mid{
+    position: absolute;
+    top:53%;
+    left: 32%;
+
+}
+.banner-des-2 .banner-des-mid .qinghan{
+
+}
+.banner-des-2 .banner-des-mid .qinghan p:nth-of-type(1){
+    color: #f6f6f6;
+    font-size: 22px;
+}
+.banner-des-2 .banner-des-mid .qinghan p:nth-of-type(1) span{
+    color: #ff2a00;
+    font-size: 40px;
+    font-weight: bold;
+    animation-duration: 2.8s ;
+    transition: all 400ms;
+    animation-name: zoomOut;
+}
+.banner-des-2 .banner-des-mid .qinghan p:nth-of-type(2){
+    color: #bfc2c7;
+    font-size: 16px;
+}
+.banner-des-2 .banner-des-mid .yingxiao{
+    color: #bfc2c7;
+    font-size: 16px;
+}
+
+
+.banner-des-2 .banner-des-bottom{
+    color: #bfc2c7;
+    font-size: 14px;
+}
+
+.banner-des-3{
+    position: absolute;
+    top: 30%;
+    left: 18%;
+    width: 800px;
+    height: 280px;
+    /*background: rgba(255,255,255,.18);*/
+    padding:60px 200px;
+    font-family: '华文隶书';
+}
+.banner-des-3 .banner-des-left{
+    color: #e4e4e5;
+    font-size: 220px;
+    float: left;
+    height: 280px;
+    font-family: '华文隶书';
+    margin-right: 20px;
+    animation-duration: 2.8s ;
+    transition: all 400ms;
+    animation-name: zoomIn;
+}
+.banner-des-3 .banner-des-right {
+    float: left;
+}
+.banner-des-3 .banner-des-right p:nth-of-type(1){
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 80px;
+    margin-top: 20px;
+    animation-duration: 2.8s ;
+    transition: all 400ms;
+    animation-name: zoomIn;
+}
+.banner-des-3 .banner-des-right p:nth-of-type(2){
+    color: #ba1c0e;
+    font-size: 12px;
+    line-height: 30px;
+    animation-duration: 2.8s ;
+    transition: all 400ms;
+    animation-name: zoomIn;
+}
+.banner-des-3 .banner-des-right p:nth-of-type(3){
+    color: #ba1c0e;
+    font-size: 12px;
+    line-height: 30px;
+    animation-duration: 2.8s ;
+    transition: all 400ms;
+    animation-name: zoomIn;
+}
+.banner-des-3 .banner-des-right p:nth-of-type(4){
+    color: #c7c5ca;
+    font-size: 14px;
 }
 /*轮播图结束*/
 
@@ -92,7 +270,7 @@ body{
 /*产品服务开始*/
 .product-service{
     background: url(../img/bj-2.jpg) repeat center top;
-    padding-bottom: 45px;
+    padding-bottom:55px;
 }
 
 .cont_service {
@@ -231,7 +409,7 @@ body{
 .related_title h3{
     height: 35px;
     line-height: 35px;
-    background: url(../img/fg.png) no-repeat center center;
+    background: url(../img/fg-2.png) no-repeat center center;
     font-size: 30px;
     color: #b1b1b1;
 }
@@ -264,7 +442,7 @@ body{
 }
 .picbox{
     width: 100%;
-    height: 240px;
+    height:190px;
 }
 .transition500 {
     transition: 500ms ease-out;
@@ -300,7 +478,7 @@ body{
 .workinfo {
     padding: 20px;
     height: 110px;
-    color: #666;
+    color: #999;
     background: #fff;
     transition: background-color .5s,color .5s;
     -webkit-transition: background-color .5s,color .5s;
@@ -322,23 +500,76 @@ body{
 }
 .casebox:hover > a > .workinfo  {
     /*opacity: 1;*/
-    background-color: rgba(230,0,18,0.76);
+    background-color:#e05f26;
     color: #fff;
 }
 /*相关案例结束*/
 
 /*团队team开始*/
+.team{ background:url(../img/bj-4.jpg) no-repeat center; width:100%; height: 612px; text-align:center; margin: 0 auto; max-width:1920px; }
+.team-title .liucheng-title{ width:100%; margin:0 auto; padding:20px 0 20px 0; text-align: center; }
+.gy{ font-size:30px; color:#fff; text-align:center; font-weight:bold;
+    background:url(../img/fg.png) no-repeat center; }
+.team-title{ padding-top:40px; }
+.team-title p{padding-bottom: 10px;}
+.team-title i{ font-size:17px; color:#fff; text-align:center; display:block; margin: 0 auto;}
+.team-1{ width: 1200px; margin: 0 auto; padding-top:50px;}
+.td-1{ width:370px; height: 100px; padding-bottom:35px; }
+.td-1 img{ float: left;}
+.team-left{ text-align: left; width:33%; height: auto; float: left; padding-right:40px; padding-left:50px;}
+.team-left .cx{ width: 370px; float: left;}
+.team-left .cx p{ color: #fff; font-size:35px;  width: 370px; float: left; font-family:'华文行楷'; padding-bottom:15px;}
+.team-left .cx p span{ color: #e05f26; font-size:20px; font-family: '方正清刻本...'；}
+.wb{ font-size: 16px; color: #fff; text-align: left; line-height: 200%;cursor:pointer}
+.wb{
+    animation-duration: 2.8s !important;
+    transition: all 400ms;
+    animation-name: zoomIn;
 
+}
 /*团队team结束*/
 
-/*网站建设流程开始*/
 
+/*网站建设流程开始*/
+.website-process{background:url(../img/bj-5.jpg) no-repeat center; width:100%; height: 612px; text-align:center;
+    margin: 0 auto; max-width:1920px;}
+.liucheng{ font-size:30px; color:#808080; text-align:center; font-weight:bold;
+    background:url(../img/fg-1.png) no-repeat center; overflow: hidden; }
+.liucheng-title p{ padding-bottom: 10px; }
+.liucheng-title{ padding-top:40px; }
+.liuchengtu{ width: 100%; height: 63%; text-align: center; padding-top:60px; }
+.liuchengtu img{ width: 1164px; height: 282px; }
+.liuchengtu{
+    animation-duration: 2.8s;
+    transition: all 800ms;
+    animation-name: bounceIn;
+
+}
+.website-process .liucheng-des{
+
+}
+.website-process .liucheng-des  p:nth-of-type(1){
+    font-size:32px;
+    color:#8c8a8c;
+    line-height:50px;
+    animation-duration: 2.8s !important;
+    transition: all 400ms;
+    animation-name: zoomIn;
+}
+.website-process .liucheng-des p:nth-of-type(2){
+    font-size:16px;
+    color:#8c8a8c;
+    animation-duration: 2.8s !important;
+    transition: all 400ms;
+    animation-name: zoomIn;
+}
 /*网站建设流程结束*/
 
 /*行业资讯/公司动态... Other area 开始*/
 .news_tabs {
+    background:url(../img/bj-6.jpg) no-repeat center;
     width: 1900px;
-    margin: 15px auto 20px;
+    margin: 50px auto 0px;
 }
 
 .tabs_menu {
@@ -410,25 +641,30 @@ body{
 
 .aboutlist .a_li .img {
     text-align: right;
-    margin-bottom: 5px;
+    height:195px;
+    width: 300px;
+
 }
 .aboutlist .a_li .img img{
     width: 100%;
 }
 .aboutlist .a_li .text {
     /*padding-right: 48px;*/
+    background-color: #fff;
+    height:120px;
 }
 .aboutlist .a_li .text h2{
     color: #666666;
     font-size: 18px;
     border-bottom: 1px solid #d9d9d9;
     line-height: 50px;
+    padding-left:20px;
 }
 .aboutlist .a_li .text p {
     color: #666666;
     font-size: 14px;
     line-height: 24px;
-    margin: 5px 0 20px;
+    margin: 10px 10px;
 }
 
 .newsli dl {
@@ -551,6 +787,7 @@ body{
     width: 128px;
     margin-right: 50px;
     border-right: 1px #bbb dashed;
+    height:164px;
 }
 
 .foot_nav dl dt,.foot_nav .foot_nav_ab h3 {
@@ -631,8 +868,7 @@ body{
     height: 106px;
 }
 .copyright .copyright-left img{
-    width: 300px;
-    height: 106px;
+
 }
 
 .copyright .copyright-right{
@@ -647,6 +883,7 @@ body{
     color: #fff;
     display: flex;
     align-items: center;
+
 }
 .copyright .copyright-right .contact-address .address:nth-child(1){
     margin-right: 20px;
