@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=0, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no, email=no, date=no, address=no">
+    <title>jump_link</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="js/rem.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.i18n.properties.js"></script>
+</head>
+<body>
+    <div class="main-content">
+        <div class="dbit-logo">
+            <img src="img/icon@2x.png" alt="">
+        </div>
+        <p class="dbit-title">
+          Dbit 区块链媒体
+        </p>
+        <div class="dbit-photo">
+            <img src="img/photo@2x.png" alt="">
+        </div>
+        <div class="dbit-des">
+            <h2>全球领先的区块链媒体</h2>
+            <p>
+                Dbit为你提供优质的新闻内容，实时的区块链快讯，
+                全球几十种虚拟货币实时价格、上百条生动易懂的区块链入门知识。
+            </p>
+        </div>
+        <div class="dbit-button" id="downloadButton">
+            立即下载
+        </div>
+        <p class="dbit-button-des">
+            点击下载，立即获得行业的深入洞见、
+            全球实时的信息和数据、帮助您更深入的了解区块链。
+        </p>
+    </div>
+</body>
+<script type="text/javascript" charset="UTF-8" src="//res.cdn.openinstall.io/openinstall.js"></script>
+<!--<script type="text/javascript" id="_openinstall_banner" src="//openinstall.io/openinstall.js?id=509571818704280921"></script>-->
+<script type="text/javascript">
+    //openinstall初始化时将与openinstall服务器交互，应尽可能早的调用
+    /*web页面向app传递的json数据(json string/js Object)，应用被拉起或是首次安装时，通过相应的android/ios api可以获取此数据*/
+    var data = OpenInstall.parseUrlParams();//openinstall.js中提供的工具函数，解析url中的所有查询参数
+    new OpenInstall({
+        /*appKey必选参数，openinstall平台为每个应用分配的ID*/
+        appKey : "s0kwei",
+        /*可选参数，自定义android平台的apk下载文件名，只有apk在openinstall托管时才有效；个别andriod浏览器下载时，中文文件名显示乱码，请慎用中文文件名！*/
+        //apkFileName : 'com.fm.openinstalldemo-v2.2.0.apk',
+        /*可选参数，是否优先考虑拉起app，以牺牲下载体验为代价*/
+        //preferWakeup:true,
+        /*自定义遮罩的html*/
+        //mask:function(){
+        //  return "<div id='openinstall_shadow' style='position:fixed;left:0;top:0;background:rgba(0,255,0,0.5);filter:alpha(opacity=50);width:100%;height:100%;z-index:10000;'></div>"
+        //},
+        /*openinstall初始化完成的回调函数，可选*/
+        onready : function() {
+            var m = this, button = document.getElementById("downloadButton");
+            button.style.visibility = "visible";
+
+            /*在app已安装的情况尝试拉起app*/
+            m.schemeWakeup();
+            /*用户点击某个按钮时(假定按钮id为downloadButton)，安装app*/
+            button.onclick = function() {
+                m.wakeupOrInstall();
+                return false;
+            }
+        }
+    }, data);
+
+
+    /*
+    * 获取url参数
+    * */
+    function gethrefParam(varName) {
+        var param = {};
+        var url = window.location.href;
+        if (url.indexOf("?") != -1) {
+            url = url.split("?")[1];
+            var keyvaluemap = url.split("&");
+            for (var key in keyvaluemap) {
+                var kvstr= keyvaluemap[key];
+                var kv = kvstr.split("=");
+                param[kv[0]] = kv[1];
+            }
+        }
+        return param[varName];
+    }
+
+    function getLangCode(){
+        var lang ,langCode=gethrefParam("langCode");
+        switch (langCode){
+            case 'ja_JP':
+                lang='ja'
+                break;
+            case 'ko_KR':
+                lang='ko'
+                break;
+            case 'ru_RU':
+                lang='ru'
+                break;
+            case 'en_US':
+                lang='en'
+                break;
+            case 'zh_CN':
+                lang='zh'
+                break;
+            default: ;
+        }
+        return lang
+    }
+
+    // console.log(getLangCode());
+
+    /*
+   * 获取国际化资源
+   * */
+    function loadProperties(){
+        jQuery.i18n.properties({// 加载资浏览器语言对应的资源文件
+            name:'strings', // 资源文件名称
+            path:'i18n/', // 资源文件路径
+            mode:'map', // 用 Map 的方式使用资源文件中的值
+            language:getLangCode(),
+            callback: function() {// 加载成功后设置显示内容
+                $('.dbit-title').html($.i18n.prop('Dbit blockchain media'))
+                $('.dbit-des h2').html($.i18n.prop('The world\'s leading blockchain media'))
+                $('.dbit-des p').html($.i18n.prop('Dbit provides you with high-quality news content'))
+                $('.dbit-button').html($.i18n.prop('Download'))
+                $('.dbit-button-des').html($.i18n.prop('Download now'))
+            }
+        });
+    }
+
+    loadProperties();
+
+
+</script>
+
+</html>

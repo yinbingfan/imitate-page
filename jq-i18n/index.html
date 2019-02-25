@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=0, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no, email=no, date=no, address=no">
+    <title>jump_link</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="js/rem.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.i18n.properties.js"></script>
+</head>
+<body>
+
+</div>
+</body>
+</html>
+<script>
+
+const object1 = {
+  a: 1,
+  b: 2,
+  c: 3
+};
+
+const object2 = Object.assign({c: 2, d: 5 ,e : 9}, object1);
+
+// console.log(object2.c, object2.d,object2.e);
+// console.log(object2)
+
+
+// const type = "ACTION"
+// let type = 1
+// console.log(type) //Duplicate declaration "type"
+
+    let t = 'abcdefg'
+    if(t.indexOf('cde') > -1) {
+      console.log(2)
+    }
+    console.log('ba'.repeat(3)) //bababa
+
+
+    // //递归
+    // function a(n, p = 1) {
+    //   if(n <= 1) {
+    //     return 1 * p
+    //   }
+    //   let s = n * p
+    //   return a(n - 1, s)
+    // }
+    // //求 1 x 2 x 3的阶乘
+    // let sum = a(3)
+    // console.log(sum) // 6
+
+    let name = Symbol.for('name');
+    let name1 = Symbol.for('name1');
+    let name2 = Symbol.for('name2');
+    
+    console.log(Symbol.keyFor(name)) // name
+    console.log(Symbol.keyFor(name1)) // name1
+    console.log(Symbol.keyFor(name2)) // name2
+
+
+
+    let a = Symbol('a');
+    let b = Symbol('b');
+    
+    let obj = {
+      [a]: "123",
+      [b]: 45
+    }
+    
+    const symbolsKey = Object.getOwnPropertySymbols(obj);
+    
+    for(let value of symbolsKey) {
+      console.log(obj[value]) 
+    }
+</script>

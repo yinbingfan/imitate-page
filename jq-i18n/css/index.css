@@ -1,0 +1,111 @@
+/*---样式清除开始----*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-weight: inherit;
+    font-style: normal;
+    vertical-align: baseline;
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+
+article, aside, figure, figure img, hgroup, footer, header, nav, section {
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*---样式清除结束------*/
+.main-content{
+    width: 100%;
+    height: auto;
+    background: url("../img/bg@2x.png");
+    background-size: cover;
+}
+.main-content .dbit-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: .64rem;
+}
+.main-content .dbit-logo img{
+    width: 1.94rem;
+    height: 1.94rem;
+}
+.dbit-title{
+    font-size: .54rem;
+    color: #00ffde;
+    text-align: center;
+    margin: .60rem 0 .98rem;
+}
+.dbit-photo{
+    margin: 0 8%;
+}
+.dbit-photo img{
+    width: 100%;
+}
+.dbit-des h2{
+    font-size: .70rem;
+    color: #00ffde;
+    text-align: center;
+    margin: .96rem  2% .64rem;
+}
+.dbit-des p{
+    margin: 0 2%;
+    font-size: .46rem;
+    color: #00ffde;
+    text-align: center;
+    line-height: .74rem;
+}
+.dbit-button{
+
+    width: 80%;
+    height: 1.20rem;
+    color: #020b1c;
+    font-size: .60rem;
+    background: #FDB438;
+    border-radius: .60rem;
+    text-align: center;
+    line-height: 1.2rem;
+    margin: .68rem  10% .32rem;
+}
+.dbit-button-des{
+    font-size: .38rem;
+    color: #00ffde;
+    text-align: center;
+    line-height: .54rem;
+    padding-bottom: 1rem;
+    margin: 0 6%;
+}
+
+@media only screen and (min-device-width: 550px) {
+    html {
+        display: flex;
+        justify-content: center;
+        background-color: #fafafa;
+    }
+    body {
+        width: 500px !important;
+    }
+
+    .main-content {
+        width: 500px !important;
+    }
+
+}
