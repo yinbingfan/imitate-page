@@ -935,3 +935,8 @@ body{
     font-size: 0;
 }
 /*底部样式结束*/
+
+/*响应式样式*/
+
+@media screen and (min-width:1000px) and (max-width:1280px){}
+@media screen and (min-width:1289px) and (max-width:1920px){}
